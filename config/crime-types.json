@@ -1,0 +1,9 @@
+{
+  "categories": [
+    { "code": "IPC_379", "name": "Theft", "severity": 4, "ipcSection": "379", "bnsSection": "303" },
+    { "code": "IPC_392", "name": "Robbery", "severity": 8, "ipcSection": "392", "bnsSection": "309" },
+    { "code": "IPC_420", "name": "Cheating / Fraud", "severity": 6, "ipcSection": "420", "bnsSection": "318" },
+    { "code": "IPC_302", "name": "Murder", "severity": 10, "ipcSection": "302", "bnsSection": "103" },
+    { "code": "IPC_307", "name": "Attempt to Murder", "severity": 9, "ipcSection": "307", "bnsSection": "109" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "districts": [
+    { "code": "KA-BLR-U", "name": "Bangalore Urban", "status": "ACTIVE", "stationsCount": 4 },
+    { "code": "KA-MYS", "name": "Mysuru", "status": "STUB", "stationsCount": 0 },
+    { "code": "KA-MNG", "name": "Mangaluru", "status": "STUB", "stationsCount": 0 },
+    { "code": "KA-BLG", "name": "Belagavi", "status": "STUB", "stationsCount": 0 },
+    { "code": "KA-KLB", "name": "Kalaburagi", "status": "STUB", "stationsCount": 0 }
+  ]
+}

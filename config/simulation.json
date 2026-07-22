@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "defaultTickRateMs": 1000,
+  "speedMultipliers": [1, 2, 5, 10],
+  "maxEventBuffer": 1000,
+  "districts": ["bangalore-urban", "mysuru"]
+}

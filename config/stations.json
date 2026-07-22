@@ -1,0 +1,8 @@
+{
+  "stations": [
+    { "code": "WFD-01", "name": "Whitefield", "district": "KA-BLR-U", "adapter": "whitefield-adapter.js" },
+    { "code": "HAL-02", "name": "HAL Police Station", "district": "KA-BLR-U", "adapter": "hal-adapter.js" },
+    { "code": "BLR-03", "name": "Bellandur Police Station", "district": "KA-BLR-U", "adapter": "bellandur-adapter.js" },
+    { "code": "IND-04", "name": "Indiranagar Police Station", "district": "KA-BLR-U", "adapter": "indiranagar-adapter.js" }
+  ]
+}
