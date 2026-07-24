@@ -1,1 +1,11 @@
-
+{
+  "functions": {
+    "source": "functions",
+    "targets": [
+      "risk-engine",
+      "hotspot-engine",
+      "network-analysis"
+    ],
+    "ignore": []
+  }
+}
