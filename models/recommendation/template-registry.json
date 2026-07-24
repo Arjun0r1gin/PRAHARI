@@ -1,0 +1,22 @@
+[
+  {
+    "id": "cluster-patrol",
+    "description": "Triggered by spatio-temporal cluster rule; recommends a patrol window."
+  },
+  {
+    "id": "review-flag-repeat",
+    "description": "Triggered by repeat-offender rule; recommends a review flag."
+  },
+  {
+    "id": "priority-review-centrality",
+    "description": "Triggered by network-centrality rule; recommends priority review for a possible coordinating role."
+  },
+  {
+    "id": "model-only-review",
+    "description": "Triggered when the AutoML model alone flags Critical risk with no rule firing; recommends investigative review."
+  },
+  {
+    "id": "no-action-low",
+    "description": "Default for Low band; no action recommended, logged for pattern tracking."
+  }
+]
