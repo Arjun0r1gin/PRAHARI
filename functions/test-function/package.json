@@ -1,0 +1,9 @@
+{
+	"name": "test-function",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "arjunvijayakumar1122@gmail.com",
+	"dependencies": {
+		"zcatalyst-sdk-node": "latest"
+	}
+}
