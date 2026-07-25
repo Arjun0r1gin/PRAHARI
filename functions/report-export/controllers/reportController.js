@@ -9,21 +9,29 @@
 
 const { v4: uuidv4 } = require('uuid');
 const { generateCaseReportPdf } = require('../services/reportService');
+const { validateRequest } = require('@prahari/shared/utils/validator');
+const { handleControllerError } = require('@prahari/shared/utils/errorHandler');
 
 /**
  * Handle GET /v1/report-export/:caseId
  */
 async function exportCaseReport(req, res) {
+  const { valid, error } = validateRequest(req, {
+    custom: (r) => {
+      const caseId = (r && r.params && r.params.caseId) || (r && r.query && r.query.caseId) || (r && r.body && r.body.caseId);
+      if (!caseId || typeof caseId !== 'string' || caseId.trim() === '') {
+        return 'Parameter caseId is required.';
+      }
+      return null;
+    },
+  });
+
+  if (!valid) {
+    return res.status(400).json(error);
+  }
+
   try {
     const { caseId } = req.params;
-
-    if (!caseId) {
-      return res.status(400).json({
-        error_code: 'MISSING_CASE_ID',
-        message: 'Parameter caseId is required.',
-        trace_id: uuidv4(),
-      });
-    }
 
     const catalyst = req.catalyst;
     const reportData = await generateCaseReportPdf(caseId, catalyst);
@@ -39,10 +47,9 @@ async function exportCaseReport(req, res) {
       report: reportData,
     });
   } catch (err) {
-    return res.status(500).json({
-      error_code: 'REPORT_EXPORT_ERROR',
-      message: err.message || 'Failed to generate report export.',
-      trace_id: uuidv4(),
+    return handleControllerError(res, err, {
+      errorCode: 'REPORT_EXPORT_ERROR',
+      defaultMessage: 'Failed to generate report export.',
     });
   }
 }

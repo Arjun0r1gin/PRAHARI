@@ -20,6 +20,12 @@ app.use(authMiddleware);
 
 // Secured Operational Routes
 app.get('/v1/report-export/:caseId', exportCaseReport);
+app.get('/v1/report-export', exportCaseReport);
+
+if (process.env.NODE_ENV !== 'test') {
+  process.on('SIGINT', () => process.exit(0));
+  process.on('SIGTERM', () => process.exit(0));
+}
 
 function handler(req, res) {
   return app(req, res);

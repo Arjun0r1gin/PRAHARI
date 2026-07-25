@@ -22,6 +22,11 @@ app.use(authMiddleware);
 app.post('/v1/outcome-loop/action', handleAction);
 app.post('/v1/outcome-loop/outcome', handleOutcome);
 
+if (process.env.NODE_ENV !== 'test') {
+  process.on('SIGINT', () => process.exit(0));
+  process.on('SIGTERM', () => process.exit(0));
+}
+
 function handler(req, res) {
   return app(req, res);
 }

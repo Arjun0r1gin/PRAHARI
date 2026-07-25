@@ -3,6 +3,8 @@ const { getRecommendation } = require("../recommendationTemplates");
 const { buildExplanation } = require("../explanationBuilder");
 const dataRepository = require("@prahari/shared/repositories/dataRepository");
 const { sendResponse } = require("@prahari/shared/utils/responseHelper");
+const { validateRequest } = require("@prahari/shared/utils/validator");
+const { handleControllerError } = require("@prahari/shared/utils/errorHandler");
 
 // Mock fallback store for unit tests and local execution
 const MOCK_ALERT_STORE = {
@@ -58,6 +60,25 @@ function generateTraceId() {
  */
 async function getScore(req, res) {
   try {
+    throw new Error("Prompt4 internal error test");
+
+    const validation = validateRequest(req, {
+      custom: (r) => {
+        const alertId = (r && r.params && r.params.alertId) || (r && r.query && r.query.alertId) || (r && r.body && r.body.alertId);
+        if (!alertId || typeof alertId !== "string" || alertId.trim() === "") {
+          return "Alert ID parameter is required.";
+        }
+        return null;
+      }
+    });
+
+    if (!validation.valid) {
+      if (res && typeof res.status === "function") {
+        return sendResponse(res, 400, false, null, validation.error);
+      }
+      return validation.error;
+    }
+
     const alertId = (req && req.params && req.params.alertId) || (req && req.query && req.query.alertId);
 
     if (!alertId) {
@@ -124,15 +145,11 @@ async function getScore(req, res) {
     }
     return payload;
   } catch (err) {
-    const errorPayload = {
-      error_code: "INTERNAL_ERROR",
-      message: err.message || "An unexpected error occurred while calculating risk score",
-      trace_id: generateTraceId()
-    };
-    if (res && typeof res.status === "function") {
-      return sendResponse(res, 500, false, null, errorPayload);
-    }
-    return errorPayload;
+    return handleControllerError(res, err, {
+      errorCode: "RISK_SCORE_CALCULATION_ERROR",
+      defaultMessage: "An unexpected error occurred while calculating the risk score.",
+      useSendResponse: true,
+    });
   }
 }
 
@@ -173,15 +190,11 @@ function getAlerts(req, res) {
     }
     return responsePayload;
   } catch (err) {
-    const errorPayload = {
-      error_code: "INTERNAL_ERROR",
-      message: err.message || "An unexpected error occurred while retrieving alerts",
-      trace_id: generateTraceId()
-    };
-    if (res && typeof res.status === "function") {
-      return sendResponse(res, 500, false, null, errorPayload);
-    }
-    return errorPayload;
+    return handleControllerError(res, err, {
+      errorCode: "RISK_ALERTS_FETCH_ERROR",
+      defaultMessage: "An unexpected error occurred while retrieving decision alerts.",
+      useSendResponse: true,
+    });
   }
 }
 

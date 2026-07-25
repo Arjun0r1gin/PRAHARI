@@ -55,6 +55,8 @@ function signalAuthMiddleware(req, res, next) {
   });
 }
 
+const { handleControllerError } = require('@prahari/shared/utils/errorHandler');
+
 // Catalyst Signals webhook endpoint (uses signal-specific backend authentication)
 app.post('/v1/events/signal-trigger', signalAuthMiddleware, async (req, res) => {
   try {
@@ -62,10 +64,9 @@ app.post('/v1/events/signal-trigger', signalAuthMiddleware, async (req, res) => 
     const result = await processIncomingRecordEvent(payload, req.catalyst);
     return res.status(200).json(result);
   } catch (err) {
-    return res.status(500).json({
-      error_code: 'SIGNAL_TRIGGER_ERROR',
-      message: err.message || 'Failed to process signal event trigger.',
-      trace_id: uuidv4(),
+    return handleControllerError(res, err, {
+      errorCode: 'SIGNAL_TRIGGER_ERROR',
+      defaultMessage: 'Failed to process signal event trigger.',
     });
   }
 });
@@ -84,10 +85,9 @@ app.post('/v1/simulation/emit-event', authMiddleware, async (req, res) => {
       triggerResult,
     });
   } catch (err) {
-    return res.status(500).json({
-      error_code: 'EVENT_EMISSION_ERROR',
-      message: err.message || 'Failed to emit synthetic event.',
-      trace_id: uuidv4(),
+    return handleControllerError(res, err, {
+      errorCode: 'EVENT_EMISSION_ERROR',
+      defaultMessage: 'Failed to emit synthetic event.',
     });
   }
 });

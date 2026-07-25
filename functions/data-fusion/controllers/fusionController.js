@@ -20,6 +20,8 @@ const { deduplicate }       = require('../services/deduplicationService');
 const { upsertRecords }     = require('../services/dataStoreService');
 const { writeRaw, writeQuarantine } = require('../services/noSQLService');
 const { getCatalystApp }    = require('@prahari/shared/utils/catalystHelper');
+const { validateRequest }   = require('@prahari/shared/utils/validator');
+const { handleControllerError } = require('@prahari/shared/utils/errorHandler');
 
 /**
  * Run the complete fusion pipeline.
@@ -28,6 +30,18 @@ const { getCatalystApp }    = require('@prahari/shared/utils/catalystHelper');
  * @param {import('express').Response} res
  */
 async function runFusion(req, res) {
+  const { valid, error } = validateRequest(req, {
+    custom: (r) => {
+      if (r.body && (typeof r.body !== 'object' || Array.isArray(r.body))) {
+        return 'Request body must be a valid JSON object.';
+      }
+      return null;
+    },
+  });
+  if (!valid) {
+    return res.status(400).json(error);
+  }
+
   const startTs = Date.now();
   const catalyst = getCatalystApp(req);
 
@@ -73,11 +87,12 @@ async function runFusion(req, res) {
       ds_inserted:     inserted,
       ds_errors:       dsErrors.length,
     };
-
     return res.status(200).json({ success: true, summary });
   } catch (err) {
-    console.error('[FusionController] runFusion error:', err);
-    return res.status(500).json({ success: false, error: err.message });
+    return handleControllerError(res, err, {
+      errorCode: 'FUSION_PIPELINE_ERROR',
+      defaultMessage: 'An internal error occurred while processing the data fusion pipeline.',
+    });
   }
 }
 

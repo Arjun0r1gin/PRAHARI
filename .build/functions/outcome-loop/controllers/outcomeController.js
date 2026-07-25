@@ -10,29 +10,38 @@
 
 const { v4: uuidv4 } = require('uuid');
 const { recordAction, recordOutcome } = require('../services/outcomeService');
+const { validateRequest } = require('@prahari/shared/utils/validator');
+const { handleControllerError } = require('@prahari/shared/utils/errorHandler');
 
 /**
  * Handle POST /v1/outcome-loop/action
  */
 async function handleAction(req, res) {
+  const { valid, error } = validateRequest(req, {
+    custom: (r) => {
+      const { alert_id, case_id, decision } = (r && r.body) || {};
+      if (!alert_id && !case_id) {
+        return {
+          error_code: 'MISSING_TARGET_ID',
+          message: 'Must provide either alert_id or case_id in body.',
+        };
+      }
+      if (!decision) {
+        return {
+          error_code: 'MISSING_DECISION',
+          message: 'Field "decision" (e.g. actioned, escalated, dismissed) is required.',
+        };
+      }
+      return null;
+    },
+  });
+
+  if (!valid) {
+    return res.status(400).json(error);
+  }
+
   try {
     const { alert_id, case_id, decision, note, officer_id } = req.body || {};
-
-    if (!alert_id && !case_id) {
-      return res.status(400).json({
-        error_code: 'MISSING_TARGET_ID',
-        message: 'Must provide either alert_id or case_id in body.',
-        trace_id: uuidv4(),
-      });
-    }
-
-    if (!decision) {
-      return res.status(400).json({
-        error_code: 'MISSING_DECISION',
-        message: 'Field "decision" (e.g. actioned, escalated, dismissed) is required.',
-        trace_id: uuidv4(),
-      });
-    }
 
     const catalyst = req.catalyst;
     const actionRecord = await recordAction(
@@ -46,10 +55,9 @@ async function handleAction(req, res) {
       action: actionRecord,
     });
   } catch (err) {
-    return res.status(500).json({
-      error_code: 'ACTION_RECORD_ERROR',
-      message: err.message || 'Failed to record officer action.',
-      trace_id: uuidv4(),
+    return handleControllerError(res, err, {
+      errorCode: 'ACTION_RECORD_ERROR',
+      defaultMessage: 'Failed to record officer action.',
     });
   }
 }
@@ -58,16 +66,19 @@ async function handleAction(req, res) {
  * Handle POST /v1/outcome-loop/outcome
  */
 async function handleOutcome(req, res) {
+  const { valid, error } = validateRequest(req, {
+    body: {
+      action_id: { type: 'string', required: true },
+      result: { required: true },
+    },
+  });
+
+  if (!valid) {
+    return res.status(400).json(error);
+  }
+
   try {
     const { action_id, result } = req.body || {};
-
-    if (!action_id || !result) {
-      return res.status(400).json({
-        error_code: 'INVALID_OUTCOME_PAYLOAD',
-        message: 'Both action_id and result are required.',
-        trace_id: uuidv4(),
-      });
-    }
 
     const catalyst = req.catalyst;
     const outcomeRecord = await recordOutcome(action_id, result, catalyst);
@@ -78,10 +89,9 @@ async function handleOutcome(req, res) {
       outcome: outcomeRecord,
     });
   } catch (err) {
-    return res.status(500).json({
-      error_code: 'OUTCOME_RECORD_ERROR',
-      message: err.message || 'Failed to record outcome.',
-      trace_id: uuidv4(),
+    return handleControllerError(res, err, {
+      errorCode: 'OUTCOME_RECORD_ERROR',
+      defaultMessage: 'Failed to record outcome feedback.',
     });
   }
 }

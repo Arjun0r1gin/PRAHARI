@@ -1,0 +1,1123 @@
+[debug] [2026-07-25T15:09:00.307Z] : 
+[debug] [2026-07-25T15:09:00.309Z] : ----------------------------------------------------------------------
+[debug] [2026-07-25T15:09:00.309Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2026-07-25T15:09:00.309Z] : CLI Version:  1.27.0
+[debug] [2026-07-25T15:09:00.309Z] : Platform:     win32
+[debug] [2026-07-25T15:09:00.309Z] : Node Version: v24.18.0
+[debug] [2026-07-25T15:09:00.309Z] : Time:         Sat Jul 25 2026 20:39:00 GMT+0530 (India Standard Time)
+[debug] [2026-07-25T15:09:00.309Z] : ----------------------------------------------------------------------
+[debug] [2026-07-25T15:09:00.309Z] : 
+[debug] [2026-07-25T15:09:02.116Z] : > authorizing via signed-in user option
+[debug] [2026-07-25T15:09:02.117Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.grid.READ","ZohoCatalyst.grid.terminate","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
+[debug] [2026-07-25T15:09:02.242Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/47648000000023001 
+
+[debug] [2026-07-25T15:09:02.453Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 25 Jul 2026 15:09:01 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-07-25T15:09:02.456Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/47648000000023001/environment 
+
+[debug] [2026-07-25T15:09:02.524Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 25 Jul 2026 15:09:01 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-07-25T15:09:02.639Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/get-details 
+Query params: {"feature_name":"runtime"}
+
+[debug] [2026-07-25T15:09:02.708Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 25 Jul 2026 15:09:01 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-07-25T15:09:02.715Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/47648000000023001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
+
+[debug] [2026-07-25T15:09:02.787Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 25 Jul 2026 15:09:01 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-07-25T15:09:02.791Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:09:02.791Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:09:02.791Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:09:02.792Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:09:02.792Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:09:02.792Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:09:02.792Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:09:02.792Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:09:02.793Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:09:02.803Z] : Node binary for stack node24 is at C:\Program Files\nodejs\node.exe
+[debug] [2026-07-25T15:10:01.003Z] : http port : '4000' is not available. Hence port '4001' will be used instead.
+[debug] [2026-07-25T15:10:01.003Z] : http port : '4000' is not available. Hence port '4002' will be used instead.
+[debug] [2026-07-25T15:10:01.004Z] : http port : '4000' is not available. Hence port '4003' will be used instead.
+[debug] [2026-07-25T15:10:01.004Z] : http port : '4000' is not available. Hence port '4004' will be used instead.
+[debug] [2026-07-25T15:10:01.004Z] : http port : '4000' is not available. Hence port '4005' will be used instead.
+[debug] [2026-07-25T15:10:01.004Z] : http port : '4000' is not available. Hence port '4006' will be used instead.
+[debug] [2026-07-25T15:10:01.004Z] : http port : '4000' is not available. Hence port '4007' will be used instead.
+[debug] [2026-07-25T15:10:01.004Z] : http port : '4000' is not available. Hence port '4008' will be used instead.
+[debug] [2026-07-25T15:10:01.884Z] : No API Gateway configuration found. Skipping API Gateway rules
+[info] [2026-07-25T15:10:01.898Z] : 
+[info] [2026-07-25T15:10:01.909Z] :  >>>>>>>>>>>>> Advanced I/O <<<<<<<<<<< 
+[info] [2026-07-25T15:10:01.953Z] : i data-fusion     : http://localhost:3000/server/data-fusion/
+[info] [2026-07-25T15:10:01.998Z] : i risk-engine     : http://localhost:3000/server/risk-engine/
+[info] [2026-07-25T15:10:02.020Z] : i hotspot-engine  : http://localhost:3000/server/hotspot-engine/
+[info] [2026-07-25T15:10:02.048Z] : i network-analysis: http://localhost:3000/server/network-analysis/
+[info] [2026-07-25T15:10:02.058Z] : i auth-hooks      : http://localhost:3000/server/auth-hooks/
+[info] [2026-07-25T15:10:02.080Z] : i audit-log       : http://localhost:3000/server/audit-log/
+[info] [2026-07-25T15:10:02.088Z] : i outcome-loop    : http://localhost:3000/server/outcome-loop/
+[info] [2026-07-25T15:10:02.103Z] : i event-triggers  : http://localhost:3000/server/event-triggers/
+[info] [2026-07-25T15:10:02.129Z] : i report-export   : http://localhost:3000/server/report-export/
+[info] [2026-07-25T15:10:02.145Z] : 
+[info] [2026-07-25T15:10:24.157Z] : [1784992224156]  "POST"  "/server/risk-engine/v1/risk-engine/score"
+[info] [2026-07-25T15:10:37.408Z] : [1784992237407]  "GET"  "/server/risk-engine/v1/risk-engine/score/DOES-NOT-EXIST"
+[info] [2026-07-25T15:17:01.547Z] : 
+change of controllers\riskController.js in risk-engine detected. Preparing your function, please wait...
+[debug] [2026-07-25T15:17:01.574Z] : Node binary for stack node24 is at C:\Program Files\nodejs\node.exe
+[error] [2026-07-25T15:17:01.654Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:17:01.654Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:17:01.654Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 7028 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 7028 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:17:01.654Z] : Error Status: 500
+[info] [2026-07-25T15:17:01.656Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2026-07-25T15:17:15.962Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:17:15.962Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:17:15.962Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 7028 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 7028 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:17:15.962Z] : Error Status: 500
+[info] [2026-07-25T15:17:15.962Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[info] [2026-07-25T15:18:05.765Z] : Shutting down server
+[error] [2026-07-25T15:18:05.899Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:18:05.899Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:18:05.900Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 2864 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at Socket.<anonymous> (node:internal/child_process:481:11)
+      at Socket.emit (node:events:509:28)
+      at Pipe.<anonymous> (node:net:351:12) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 2864 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:18:05.901Z] : Error Status: 500
+[info] [2026-07-25T15:18:05.901Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2026-07-25T15:18:05.903Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:18:05.903Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:18:05.903Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 6236 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at Socket.<anonymous> (node:internal/child_process:481:11)
+      at Socket.emit (node:events:509:28)
+      at Pipe.<anonymous> (node:net:351:12) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 6236 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:18:05.903Z] : Error Status: 500
+[info] [2026-07-25T15:18:05.903Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2026-07-25T15:18:05.904Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:18:05.905Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:18:05.905Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 6528 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at Socket.<anonymous> (node:internal/child_process:481:11)
+      at Socket.emit (node:events:509:28)
+      at Pipe.<anonymous> (node:net:351:12) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 6528 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:18:05.905Z] : Error Status: 500
+[info] [2026-07-25T15:18:05.905Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2026-07-25T15:18:05.907Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:18:05.907Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:18:05.907Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 8716 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at Socket.<anonymous> (node:internal/child_process:481:11)
+      at Socket.emit (node:events:509:28)
+      at Pipe.<anonymous> (node:net:351:12) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 8716 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:18:05.907Z] : Error Status: 500
+[info] [2026-07-25T15:18:05.907Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2026-07-25T15:18:05.909Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:18:05.909Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:18:05.909Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 15092 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at Socket.<anonymous> (node:internal/child_process:481:11)
+      at Socket.emit (node:events:509:28)
+      at Pipe.<anonymous> (node:net:351:12) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 15092 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:18:24.584Z] : 
+[debug] [2026-07-25T15:18:24.585Z] : ----------------------------------------------------------------------
+[debug] [2026-07-25T15:18:24.586Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2026-07-25T15:18:24.586Z] : CLI Version:  1.27.0
+[debug] [2026-07-25T15:18:24.586Z] : Platform:     win32
+[debug] [2026-07-25T15:18:24.586Z] : Node Version: v24.18.0
+[debug] [2026-07-25T15:18:24.586Z] : Time:         Sat Jul 25 2026 20:48:24 GMT+0530 (India Standard Time)
+[debug] [2026-07-25T15:18:24.586Z] : ----------------------------------------------------------------------
+[debug] [2026-07-25T15:18:24.586Z] : 
+[debug] [2026-07-25T15:18:26.300Z] : > authorizing via signed-in user option
+[debug] [2026-07-25T15:18:26.301Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.grid.READ","ZohoCatalyst.grid.terminate","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
+[debug] [2026-07-25T15:18:26.397Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/47648000000023001 
+
+[debug] [2026-07-25T15:18:26.676Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 25 Jul 2026 15:18:25 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-07-25T15:18:26.681Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/47648000000023001/environment 
+
+[debug] [2026-07-25T15:18:26.748Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 25 Jul 2026 15:18:25 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-07-25T15:18:26.867Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/get-details 
+Query params: {"feature_name":"runtime"}
+
+[debug] [2026-07-25T15:18:26.944Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 25 Jul 2026 15:18:26 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-07-25T15:18:26.949Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/47648000000023001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
+
+[debug] [2026-07-25T15:18:27.022Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 25 Jul 2026 15:18:26 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-07-25T15:18:27.027Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:18:27.027Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:18:27.028Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:18:27.028Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:18:27.028Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:18:27.028Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:18:27.029Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:18:27.029Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:18:27.029Z] : unknown eol undefined hence skipping check
+[debug] [2026-07-25T15:18:27.041Z] : Node binary for stack node24 is at C:\Program Files\nodejs\node.exe
+[debug] [2026-07-25T15:19:07.803Z] : http port : '4000' is not available. Hence port '4001' will be used instead.
+[debug] [2026-07-25T15:19:07.804Z] : http port : '4000' is not available. Hence port '4002' will be used instead.
+[debug] [2026-07-25T15:19:07.804Z] : http port : '4000' is not available. Hence port '4003' will be used instead.
+[debug] [2026-07-25T15:19:07.804Z] : http port : '4000' is not available. Hence port '4004' will be used instead.
+[debug] [2026-07-25T15:19:07.804Z] : http port : '4000' is not available. Hence port '4005' will be used instead.
+[debug] [2026-07-25T15:19:07.804Z] : http port : '4000' is not available. Hence port '4006' will be used instead.
+[debug] [2026-07-25T15:19:07.804Z] : http port : '4000' is not available. Hence port '4007' will be used instead.
+[debug] [2026-07-25T15:19:07.804Z] : http port : '4000' is not available. Hence port '4008' will be used instead.
+[debug] [2026-07-25T15:19:08.462Z] : No API Gateway configuration found. Skipping API Gateway rules
+[info] [2026-07-25T15:19:08.481Z] : 
+[info] [2026-07-25T15:19:08.488Z] :  >>>>>>>>>>>>> Advanced I/O <<<<<<<<<<< 
+[info] [2026-07-25T15:19:08.491Z] : i data-fusion     : http://localhost:3000/server/data-fusion/
+[info] [2026-07-25T15:19:08.492Z] : i risk-engine     : http://localhost:3000/server/risk-engine/
+[info] [2026-07-25T15:19:08.496Z] : i hotspot-engine  : http://localhost:3000/server/hotspot-engine/
+[info] [2026-07-25T15:19:08.498Z] : i network-analysis: http://localhost:3000/server/network-analysis/
+[info] [2026-07-25T15:19:08.499Z] : i auth-hooks      : http://localhost:3000/server/auth-hooks/
+[info] [2026-07-25T15:19:08.499Z] : i audit-log       : http://localhost:3000/server/audit-log/
+[info] [2026-07-25T15:19:08.500Z] : i outcome-loop    : http://localhost:3000/server/outcome-loop/
+[info] [2026-07-25T15:19:08.501Z] : i event-triggers  : http://localhost:3000/server/event-triggers/
+[info] [2026-07-25T15:19:08.503Z] : i report-export   : http://localhost:3000/server/report-export/
+[info] [2026-07-25T15:19:08.511Z] : 
+[info] [2026-07-25T15:19:19.445Z] : [1784992759444]  "POST"  "/server/risk-engine/v1/risk-engine/score"
+[info] [2026-07-25T15:23:34.105Z] : 
+change of controllers\riskController.js in risk-engine detected. Preparing your function, please wait...
+[debug] [2026-07-25T15:23:34.136Z] : Node binary for stack node24 is at C:\Program Files\nodejs\node.exe
+[error] [2026-07-25T15:23:34.264Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:23:34.264Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:34.265Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 19360 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at Socket.<anonymous> (node:internal/child_process:481:11)
+      at Socket.emit (node:events:509:28)
+      at Pipe.<anonymous> (node:net:351:12) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 19360 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:34.265Z] : Error Status: 500
+[info] [2026-07-25T15:23:34.273Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2026-07-25T15:23:45.225Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:23:45.226Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:45.226Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 19360 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 19360 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:45.226Z] : Error Status: 500
+[info] [2026-07-25T15:23:45.226Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[info] [2026-07-25T15:23:59.769Z] : Shutting down server
+[error] [2026-07-25T15:23:59.902Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:23:59.902Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.902Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 10200 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at Socket.<anonymous> (node:internal/child_process:481:11)
+      at Socket.emit (node:events:509:28)
+      at Pipe.<anonymous> (node:net:351:12) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 10200 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.903Z] : Error Status: 500
+[info] [2026-07-25T15:23:59.903Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2026-07-25T15:23:59.904Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:23:59.904Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.904Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 10616 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at Socket.<anonymous> (node:internal/child_process:481:11)
+      at Socket.emit (node:events:509:28)
+      at Pipe.<anonymous> (node:net:351:12) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 10616 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.904Z] : Error Status: 500
+[info] [2026-07-25T15:23:59.904Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2026-07-25T15:23:59.905Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:23:59.905Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.905Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 14448 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at Socket.<anonymous> (node:internal/child_process:481:11)
+      at Socket.emit (node:events:509:28)
+      at Pipe.<anonymous> (node:net:351:12) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 14448 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.905Z] : Error Status: 500
+[info] [2026-07-25T15:23:59.905Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2026-07-25T15:23:59.906Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:23:59.906Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.906Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 6784 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at Socket.<anonymous> (node:internal/child_process:481:11)
+      at Socket.emit (node:events:509:28)
+      at Pipe.<anonymous> (node:net:351:12) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 6784 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.906Z] : Error Status: 500
+[info] [2026-07-25T15:23:59.906Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2026-07-25T15:23:59.907Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:23:59.907Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.908Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 16572 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at Socket.<anonymous> (node:internal/child_process:481:11)
+      at Socket.emit (node:events:509:28)
+      at Pipe.<anonymous> (node:net:351:12) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 16572 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.908Z] : Error Status: 500
+[info] [2026-07-25T15:23:59.908Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2026-07-25T15:23:59.910Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:23:59.910Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.911Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 1472 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at Socket.<anonymous> (node:internal/child_process:481:11)
+      at Socket.emit (node:events:509:28)
+      at Pipe.<anonymous> (node:net:351:12) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 1472 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.911Z] : Error Status: 500
+[info] [2026-07-25T15:23:59.911Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2026-07-25T15:23:59.912Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:23:59.912Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.912Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 19360 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at Socket.<anonymous> (node:internal/child_process:481:11)
+      at Socket.emit (node:events:509:28)
+      at Pipe.<anonymous> (node:net:351:12) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 19360 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.912Z] : Error Status: 500
+[info] [2026-07-25T15:23:59.913Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2026-07-25T15:23:59.914Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:23:59.914Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.914Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 2908 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at Socket.<anonymous> (node:internal/child_process:481:11)
+      at Socket.emit (node:events:509:28)
+      at Pipe.<anonymous> (node:net:351:12) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 2908 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.914Z] : Error Status: 500
+[info] [2026-07-25T15:23:59.914Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2026-07-25T15:23:59.916Z] : × An unexpected error has occurred.
+[debug] [2026-07-25T15:23:59.916Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:13:17)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.916Z] : Original Error: Error: CatalystError: Win32: Failed to kill process tree
+    at CatalystError.getErrorInstance (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error\index.js:43:20)
+    at C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\util_modules\server\index.js:100:48
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at Socket.<anonymous> (node:internal/child_process:481:11)
+    at Socket.emit (node:events:509:28)
+    at Pipe.<anonymous> (node:net:351:12) {
+  status: 500,
+  exit: 1,
+  original: Error: Command failed: taskkill /PID 16152 /T /F
+  'taskkill' is not recognized as an internal or external command,
+  operable program or batch file.
+  
+      at genericNodeError (node:internal/errors:985:15)
+      at wrappedFn (node:internal/errors:539:14)
+      at ChildProcess.exithandler (node:child_process:417:12)
+      at ChildProcess.emit (node:events:509:28)
+      at maybeClose (node:internal/child_process:1124:16)
+      at Socket.<anonymous> (node:internal/child_process:481:11)
+      at Socket.emit (node:events:509:28)
+      at Pipe.<anonymous> (node:net:351:12) {
+    code: 1,
+    killed: false,
+    signal: null,
+    cmd: 'taskkill /PID 16152 /T /F'
+  },
+  context: undefined,
+  errorId: undefined,
+  arg: undefined,
+  skipHelp: true,
+  filePath: 'C:\\Users\\arjun\\AppData\\Roaming\\npm\\node_modules\\zcatalyst-cli\\lib\\docs\\error\\index'
+}
+    at exports.default (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:15:23)
+    at process.<anonymous> (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:129:28)
+    at process.emit (node:events:509:28)
+    at process.processEmit [as emit] (C:\Users\arjun\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emitUnhandledRejection (node:internal/process/promises:252:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:388:19)
+    at processPromiseRejections (node:internal/process/promises:475:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:106:37)
+[debug] [2026-07-25T15:23:59.916Z] : Error Status: 500
+[info] [2026-07-25T15:23:59.917Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2026-07-25T15:23:59.918Z] : Error while deleting directory  [Error: EBUSY: resource busy or locked, rmdir 'C:\Users\arjun\Desktop\PRAHARI\.build\functions\data-fusion'] {
+  errno: -4082,
+  code: 'EBUSY',
+  syscall: 'rmdir',
+  path: 'C:\\Users\\arjun\\Desktop\\PRAHARI\\.build\\functions\\data-fusion'
+}
+[info] [2026-07-25T15:24:05.028Z] : 
+[info] [2026-07-25T15:24:05.029Z] : √ Shutdown complete
+[info] [2026-07-25T15:24:05.029Z] : 
+[debug] [2026-07-25T15:24:05.029Z] : EXEC ENDED with event: serve, message: success
+[debug] [2026-07-25T15:24:05.030Z] : TOTAL DURATION OF COMMAND EXEC : 338746
+[debug] [2026-07-25T15:24:05.044Z] : > refreshing access token <
+[debug] [2026-07-25T15:24:05.047Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[info] [2026-07-25T15:24:05.123Z] : i AdvancedIO[risk-engine]: ready!
+[info] [2026-07-25T15:24:05.123Z] : i AdvancedIO[risk-engine]: http://localhost:3000/server/risk-engine/
+[debug] [2026-07-25T15:24:05.384Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 25 Jul 2026 15:24:04 GMT","content-type":"application/json;charset=UTF-8","content-length":"2523","connection":"keep-alive","cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-07-25T15:24:05.438Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2026-07-25T15:24:06.058Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 25 Jul 2026 15:24:05 GMT","content-length":"0","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+

@@ -1,6 +1,8 @@
 const { getClusters } = require("../services/clusterService");
 const dataRepository = require("@prahari/shared/repositories/dataRepository");
 const { sendResponse } = require("@prahari/shared/utils/responseHelper");
+const { validateRequest } = require("@prahari/shared/utils/validator");
+const { handleControllerError } = require("@prahari/shared/utils/errorHandler");
 
 /**
  * Controller handler for GET /v1/hotspot-engine/clusters?district=<district>&windowDays=<days>
@@ -9,6 +11,17 @@ const { sendResponse } = require("@prahari/shared/utils/responseHelper");
  * @param {Object} res - HTTP response object
  */
 async function getClustersController(req, res) {
+  const { valid, error } = validateRequest(req, {
+    query: {
+      district: { type: 'string', required: false },
+      windowDays: { type: 'number', required: false },
+    },
+  });
+
+  if (!valid) {
+    return sendResponse(res, 400, false, null, error);
+  }
+
   try {
     const district = (req && req.query && req.query.district) || "whitefield";
     const windowDays = parseInt((req && req.query && req.query.windowDays) || 30, 10);
@@ -21,10 +34,10 @@ async function getClustersController(req, res) {
 
     return sendResponse(res, 200, true, clusters);
   } catch (err) {
-    return sendResponse(res, 500, false, null, {
-      error_code: "INTERNAL_ERROR",
-      message: err.message || "An error occurred while computing hotspot clusters",
-      trace_id: (req && req.requestId) || `TRC-${Date.now().toString(36)}`
+    return handleControllerError(res, err, {
+      errorCode: "HOTSPOT_CLUSTER_ERROR",
+      defaultMessage: "An error occurred while computing hotspot clusters.",
+      useSendResponse: true,
     });
   }
 }

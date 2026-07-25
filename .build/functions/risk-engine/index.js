@@ -23,6 +23,8 @@ app.use(authMiddleware);
 
 // Risk Engine & Decision Engine Routes
 app.get("/v1/risk-engine/score/:alertId", getScore);
+app.get("/v1/risk-engine/score", getScore);
+app.post("/v1/risk-engine/score", getScore);
 app.get("/v1/decision-engine/alerts", getAlerts);
 
 /**
@@ -30,6 +32,11 @@ app.get("/v1/decision-engine/alerts", getAlerts);
  * @param {Object} req - Incoming HTTP Request
  * @param {Object} res - Outgoing HTTP Response
  */
+if (process.env.NODE_ENV !== 'test') {
+  process.on('SIGINT', () => process.exit(0));
+  process.on('SIGTERM', () => process.exit(0));
+}
+
 function handler(req, res) {
   return app(req, res);
 }

@@ -26,6 +26,12 @@ app.get('/v1/auth/admin-test', requireRole('admin'), (req, res) => {
   res.status(200).json({ status: 'admin_access_granted' });
 });
 
+// Clean process exit on signal shutdown to release file handles
+if (process.env.NODE_ENV !== 'test') {
+  process.on('SIGINT', () => process.exit(0));
+  process.on('SIGTERM', () => process.exit(0));
+}
+
 function handler(req, res) {
   return app(req, res);
 }

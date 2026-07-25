@@ -10,21 +10,32 @@
 
 const { v4: uuidv4 } = require('uuid');
 const { authenticateUser, getUserProfile } = require('../services/authService');
+const { validateRequest } = require('@prahari/shared/utils/validator');
+const { handleControllerError } = require('@prahari/shared/utils/errorHandler');
 
 /**
  * Handle POST /v1/auth/session
  */
 async function createSession(req, res) {
+  const { valid, error } = validateRequest(req, {
+    custom: (r) => {
+      const { email, password } = (r && r.body) || {};
+      if (!email || !password) {
+        return {
+          error_code: 'INVALID_CREDENTIALS_PAYLOAD',
+          message: 'Both email and password must be provided.',
+        };
+      }
+      return null;
+    },
+  });
+
+  if (!valid) {
+    return res.status(400).json(error);
+  }
+
   try {
     const { email, password } = req.body || {};
-
-    if (!email || !password) {
-      return res.status(400).json({
-        error_code: 'INVALID_CREDENTIALS_PAYLOAD',
-        message: 'Both email and password must be provided.',
-        trace_id: uuidv4(),
-      });
-    }
 
     const catalyst = req.catalyst;
     const { user, token } = await authenticateUser(catalyst, email, password);
@@ -41,10 +52,9 @@ async function createSession(req, res) {
       },
     });
   } catch (err) {
-    return res.status(500).json({
-      error_code: 'AUTH_SESSION_ERROR',
-      message: err.message || 'Failed to authenticate user session.',
-      trace_id: uuidv4(),
+    return handleControllerError(res, err, {
+      errorCode: 'AUTH_SESSION_ERROR',
+      defaultMessage: 'Failed to authenticate user session.',
     });
   }
 }
@@ -71,10 +81,9 @@ async function getCurrentUser(req, res) {
       user: profile,
     });
   } catch (err) {
-    return res.status(500).json({
-      error_code: 'PROFILE_FETCH_ERROR',
-      message: err.message || 'Failed to retrieve user profile.',
-      trace_id: uuidv4(),
+    return handleControllerError(res, err, {
+      errorCode: 'PROFILE_FETCH_ERROR',
+      defaultMessage: 'Failed to retrieve user profile.',
     });
   }
 }

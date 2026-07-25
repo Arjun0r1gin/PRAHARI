@@ -47,14 +47,34 @@ describe('Real-Time Event Pipeline Unit Tests', () => {
     expect(res.body.triggerResult.reScoreResult.alert_level).toBe('CRITICAL');
   });
 
-  test('POST /v1/events/signal-trigger handles signal payload', async () => {
+  test('POST /v1/events/signal-trigger handles signal payload when authorized', async () => {
     const incident = generateSingleIncident();
     const res = await request(eventTriggersApp)
       .post('/v1/events/signal-trigger')
+      .set('x-catalyst-signal-secret', 'prahari-signal-secret-key')
       .send({ payload: incident });
 
     expect(res.status).toBe(200);
     expect(res.body.success).toBe(true);
     expect(res.body.reScoreResult.record_id).toBe(incident.record_id);
+  });
+
+  test('POST /v1/events/signal-trigger rejects unauthorized requests when SKIP_AUTH is false', async () => {
+    const originalEnv = process.env.NODE_ENV;
+    try {
+      process.env.NODE_ENV = 'production';
+      process.env.SKIP_AUTH = 'false';
+
+      const incident = generateSingleIncident();
+      const res = await request(eventTriggersApp)
+        .post('/v1/events/signal-trigger')
+        .send({ payload: incident });
+
+      expect(res.status).toBe(401);
+      expect(res.body.error_code).toBe('UNAUTHORIZED_SIGNAL');
+    } finally {
+      process.env.NODE_ENV = originalEnv;
+      delete process.env.SKIP_AUTH;
+    }
   });
 });

@@ -4,6 +4,8 @@
  * remain the canonical import style used by all function source files.
  */
 
+const validator = require("./utils/validator");
+
 module.exports = {
   // Middleware
   loggerMiddleware: require("./middleware/loggerMiddleware"),
@@ -14,5 +16,10 @@ module.exports = {
 
   // Utils
   responseHelper: require("./utils/responseHelper"),
-  catalystHelper: require("./utils/catalystHelper")
+  catalystHelper: require("./utils/catalystHelper"),
+  validator,
+  validateRequest: validator.validateRequest,
+  generateTraceId: validator.generateTraceId,
+  errorHandler: require("./utils/errorHandler"),
+  handleControllerError: require("./utils/errorHandler").handleControllerError,
 };
