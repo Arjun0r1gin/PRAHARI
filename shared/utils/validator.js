@@ -31,7 +31,15 @@ function validateRequest(req, schema = {}) {
 
   function checkFields(sourceName, rules) {
     if (!rules) return null;
-    const target = reqObj[sourceName] || {};
+    let target = reqObj[sourceName] || {};
+
+    if (sourceName === 'body') {
+      if (Buffer.isBuffer(target)) {
+        try { target = JSON.parse(target.toString('utf8')); } catch (e) { target = {}; }
+      } else if (typeof target === 'string' && target.trim().startsWith('{')) {
+        try { target = JSON.parse(target); } catch (e) { target = {}; }
+      }
+    }
 
     for (const [fieldName, rule] of Object.entries(rules)) {
       const value = target[fieldName];
