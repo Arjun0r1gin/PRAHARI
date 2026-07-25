@@ -1,0 +1,18 @@
+{
+  "name": "network-analysis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "arjunvijayakumar1122@gmail.com",
+  "private": true,
+  "scripts": {
+    "test": "jest tests/unit"
+  },
+  "dependencies": {
+    "@prahari/shared": "file:../../vendor/prahari-shared-1.0.0.tgz",
+    "express": "^4.18.2",
+    "zcatalyst-sdk-node": "latest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

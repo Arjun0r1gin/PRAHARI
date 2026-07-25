@@ -1,0 +1,23 @@
+{
+  "name": "auth-hooks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "description": "PRAHARI Auth & RBAC Function — thin wrapper around Catalyst Authentication",
+  "scripts": {
+    "test": "jest --testPathPattern=tests/unit --colors"
+  },
+  "dependencies": {
+    "@prahari/shared": "file:../../vendor/prahari-shared-1.0.0.tgz",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0",
+    "zcatalyst-sdk-node": "latest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

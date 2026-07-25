@@ -1,0 +1,11 @@
+{
+  "deployment": {
+    "name": "report-export",
+    "stack": "node24",
+    "type": "advancedio",
+    "env_variables": {}
+  },
+  "execution": {
+    "main": "index.js"
+  }
+}
