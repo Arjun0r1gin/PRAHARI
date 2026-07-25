@@ -1,1 +1,12 @@
-
+officer_id,name,rank,badge_number,assigned_beat
+O-INR-01,Padmanabha Rao,Inspector (PI),KSP-INR-4001,Indiranagar 100 Feet Road
+O-INR-02,Geetha Nair,Sub-Inspector (SI),KSP-INR-4002,12th Main & CMH Road
+O-INR-03,Ramakrishna Hegde,Sub-Inspector (SI),KSP-INR-4003,Domlur Layout & 5th Cross
+O-INR-04,Sujatha V.,Assistant Sub-Inspector (ASI),KSP-INR-4004,Defence Colony Road
+O-INR-05,Mahadeva B.,Assistant Sub-Inspector (ASI),KSP-INR-4005,Indiranagar Market Area
+O-INR-06,Leela Devi,Head Constable (HC),KSP-INR-4006,HAL 2nd Stage liaison
+O-INR-07,Anantha Rajan,Head Constable (HC),KSP-INR-4007,1st Stage Indiranagar
+O-INR-08,Shreedevi Naik,Constable (PC),KSP-INR-4008,CMH Road Mobile Patrol
+O-INR-09,Babu Kumar,Constable (PC),KSP-INR-4009,Domlur Night Patrol
+O-INR-10,Kavitha G.,Constable (PC),KSP-INR-4010,100 Feet Road Checkpoint
+O-INR-11,Raju Narasimha,Constable (PC),KSP-INR-4011,Defence Colony Night Patrol

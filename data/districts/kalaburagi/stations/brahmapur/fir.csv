@@ -1,0 +1,6 @@
+incident_id,type,timestamp,location_lat,location_lng,status,linked_person_ids
+BRP-FIR-2025-001,vehicle_theft,2025-02-14T21:45:00+05:30,17.3287,76.8164,open,P-BRP-001
+BRP-FIR-2025-002,cybercrime,2025-05-21T15:10:00+05:30,17.3312,76.8191,open,P-BRP-003
+BRP-FIR-2025-003,burglary,2025-08-09T02:55:00+05:30,17.3264,76.8138,under_investigation,P-BRP-002;P-BRP-004
+BRP-FIR-2025-004,theft,2025-10-28T10:30:00+05:30,17.3335,76.8217,closed,P-BRP-005
+BRP-FIR-2025-005,assault,2025-12-16T19:50:00+05:30,17.3299,76.8177,under_investigation,P-BRP-001

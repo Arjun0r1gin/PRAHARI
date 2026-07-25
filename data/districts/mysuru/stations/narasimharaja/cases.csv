@@ -1,0 +1,4 @@
+case_id,linked_incident_ids,status,assigned_officer_id
+C-NRJ-2025-01,NRJ-FIR-2025-003,under_investigation,O-NRJ-01
+C-NRJ-2025-02,NRJ-FIR-2025-001;NRJ-FIR-2025-002,closed,O-NRJ-02
+C-NRJ-2025-03,NRJ-FIR-2025-004;NRJ-FIR-2025-005,open,O-NRJ-01

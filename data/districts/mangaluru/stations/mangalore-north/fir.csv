@@ -1,0 +1,6 @@
+incident_id,type,date,time,location_lat,location_lng,status,linked_person_ids
+MNG-N-FIR-2025-001,vehicle_theft,08-02-2025,22:40,12.9198,74.8621,open,P-MNGN-001
+MNG-N-FIR-2025-002,burglary,19-05-2025,03:15,12.9221,74.8648,under_investigation,P-MNGN-002;P-MNGN-003
+MNG-N-FIR-2025-003,theft,14-08-2025,11:00,12.9174,74.8596,closed,P-MNGN-004
+MNG-N-FIR-2025-004,assault,27-10-2025,20:30,12.9245,74.8671,under_investigation,P-MNGN-001
+MNG-N-FIR-2025-005,cybercrime,12-12-2025,14:15,12.9209,74.8634,open,P-MNGN-005

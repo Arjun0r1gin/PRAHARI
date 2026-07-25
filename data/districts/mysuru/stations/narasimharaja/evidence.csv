@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-NRJ-001,NRJ-FIR-2025-001,testimonial,Victim's statement of assault — medical report attached,O-NRJ-02
+E-NRJ-002,NRJ-FIR-2025-002,physical,Stolen scooter KA-09-WX-1178 located via tip-off near ward market,O-NRJ-01
+E-NRJ-003,NRJ-FIR-2025-004,photographic-description-only,CCTV description NRJ-CAM-01 showing suspect entering building at 02:47 (image not in record),O-NRJ-03
+E-NRJ-004,NRJ-FIR-2025-005,digital,Fraudulent OTP message screenshot — victim's phone extracted by cyber cell,O-NRJ-01

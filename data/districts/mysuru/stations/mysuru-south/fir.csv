@@ -1,0 +1,6 @@
+incident_id,type,date,time,location_lat,location_lng,status,linked_person_ids
+MYS-FIR-2025-001,vehicle_theft,01/07/2025,21:55,12.2904,76.6345,open,P-MYS-001
+MYS-FIR-2025-002,theft,03/22/2025,12:10,12.2929,76.6369,closed,P-MYS-003
+MYS-FIR-2025-003,burglary,06/14/2025,04:30,12.2947,76.6387,under_investigation,P-MYS-002;P-MYS-004
+MYS-FIR-2025-004,assault,09/08/2025,20:20,12.2912,76.6352,under_investigation,P-MYS-005
+MYS-FIR-2025-005,cybercrime,11/28/2025,16:45,12.2936,76.6378,open,P-MYS-006

@@ -1,0 +1,6 @@
+officer_id,name,rank,badge_number,assigned_beat
+O-APMC-01,Basavaraju Hiremath,Inspector (PI),KSP-BLV-3001,APMC yard entire
+O-APMC-02,Kamala Yenagi,Sub-Inspector (SI),KSP-BLV-3002,Market road APMC
+O-APMC-03,Shiva Kumar,Assistant Sub-Inspector (ASI),KSP-BLV-3003,APMC outer perimeter
+O-APMC-04,Meera Lamani,Head Constable (HC),KSP-BLV-3004,APMC inner road
+O-APMC-05,Ramakrishna G.,Constable (PC),KSP-BLV-3005,Night patrol APMC

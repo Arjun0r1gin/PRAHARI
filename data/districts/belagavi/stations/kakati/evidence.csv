@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-KKT-001,KKT-FIR-2025-001,physical,Stolen motorcycle KA-22-DF-8856 found at roadside ditch,O-KKT-02
+E-KKT-002,KKT-FIR-2025-003,physical,Crowbar recovered from farmhouse burglary entry,O-KKT-03
+E-KKT-003,KKT-FIR-2025-004,testimonial,Victim statement — grievous hurt; medical report attached,O-KKT-02
+E-KKT-004,KKT-FIR-2025-005,digital,Email trail from fraudulent job offer — 3 victims confirmed,O-KKT-01

@@ -1,0 +1,6 @@
+plate_number,vehicle_type,color,flagged_reason,linked_person_id
+KA-21-LM-1123,motorcycle,blue,stolen,P-MNGS-001
+KA-62-NP-4456,car,grey,none,
+KA-70-QR-7789,motorcycle,green,wanted,P-MNGS-004
+KA-19-ST-2290,car,black,none,
+KA-21-UV-5523,auto_rickshaw,yellow,none,

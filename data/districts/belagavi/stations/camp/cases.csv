@@ -1,0 +1,4 @@
+case_id,linked_incident_ids,status,assigned_officer_id
+C-CAMP-2025-01,CAMP-FIR-2025-001,under_investigation,O-CAMP-02
+C-CAMP-2025-02,CAMP-FIR-2025-002;CAMP-FIR-2025-004,closed,O-CAMP-01
+C-CAMP-2025-03,CAMP-FIR-2025-003;CAMP-FIR-2025-005,open,O-CAMP-03

@@ -1,1 +1,15 @@
-
+plate_number,vehicle_type,color,flagged_reason,linked_person_id
+KA-03-AC-1134,motorcycle,black,stolen,P-BLR-002
+KA-04-BD-8876,car,white,wanted,P-BLR-010
+KA-05-CE-5542,auto_rickshaw,yellow,none,
+KA-03-DF-7713,car,grey,stolen,P-BLR-002
+KA-04-EG-2298,motorcycle,red,wanted,P-BLR-009
+KA-05-FH-4467,car,silver,none,
+KA-03-GJ-9901,motorcycle,blue,stolen,P-BLR-004
+KA-04-HK-3378,goods_vehicle,white,none,
+KA-05-JL-6645,car,black,wanted,P-BLR-010
+KA-03-KM-1123,motorcycle,green,none,
+KA-04-LN-8890,car,maroon,stolen,P-BLR-001
+KA-05-MP-5567,motorcycle,orange,none,
+KA-03-NQ-3341,car,white,none,
+KA-04-PR-7789,motorcycle,silver,none,

@@ -1,1 +1,11 @@
-
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-WHF-001,WHF-FIR-2025-001,physical,Ignition barrel with signs of tampering — recovered near Varthur lake bund road,O-WHF-02
+E-WHF-002,WHF-FIR-2025-002,physical,Crowbar and cloth gloves found at scene; latent prints lifted,O-WHF-03
+E-WHF-003,WHF-FIR-2025-002,photographic-description-only,CCTV still description: male subject in dark jacket entering compound at 03:38 — recorded by camera WHF-CAM-04 (image not included in this record),O-WHF-07
+E-WHF-004,WHF-FIR-2025-004,digital,Screenshot of fraudulent payment confirmation page forwarded to victim — stored on encrypted forensic drive,O-WHF-01
+E-WHF-005,WHF-FIR-2025-005,testimonial,Witness statement by bystander at petrol bunk — recorded and attested; witness ID W-WHF-005,O-WHF-04
+E-WHF-006,WHF-FIR-2025-006,physical,Gold chain (18g) recovered from accused during vehicle stop on ITPL Road,O-WHF-06
+E-WHF-007,WHF-FIR-2025-007,physical,Cash bundle of ₹12,400 — denomination mix consistent with robbery victim's account,O-WHF-08
+E-WHF-008,WHF-FIR-2025-008,physical,Motorcycle key with after-market ignition adapter — linked to stolen vehicle KA-01-MG-4521,O-WHF-02
+E-WHF-009,WHF-FIR-2025-009,digital,Call records printout (14 days) associated with person P-WHF-005 — certified by telecom provider,O-WHF-01
+E-WHF-010,WHF-FIR-2025-011,testimonial,Shop owner's testimony regarding shoplifting — signed deposition; witness ID W-WHF-011,O-WHF-09

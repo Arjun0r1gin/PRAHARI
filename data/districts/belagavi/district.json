@@ -1,1 +1,15 @@
-
+{
+  "district_id": "belagavi",
+  "name": "Belagavi",
+  "headquarters": "Belagavi",
+  "state": "Karnataka",
+  "vehicle_registration_series": ["KA-22", "KA-23", "KA-24", "KA-49"],
+  "stations": [
+    { "station_id": "belagavi-rural", "name": "Belagavi Rural", "date_format": "DD-MM-YYYY", "person_field": "Suspect Name" },
+    { "station_id": "camp",           "name": "Camp",           "date_format": "ISO8601",    "person_field": "Offender Name" },
+    { "station_id": "apmc",           "name": "APMC",           "date_format": "unix_epoch", "person_field": "Accused" },
+    { "station_id": "kakati",         "name": "Kakati",         "date_format": "MM/DD/YYYY", "person_field": "Person of Interest" }
+  ],
+  "jurisdiction_center": { "lat": 15.8497, "lng": 74.4977 },
+  "_note": "All person and crime data in station sub-folders is entirely fictional. See data/DISCLAIMER.md."
+}

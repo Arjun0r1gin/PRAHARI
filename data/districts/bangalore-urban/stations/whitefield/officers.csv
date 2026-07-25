@@ -1,1 +1,11 @@
-
+officer_id,name,rank,badge_number,assigned_beat
+O-WHF-01,Kavitha Srinivas,Inspector (PI),KSP-WHF-1001,Whitefield Main Road & ITPL
+O-WHF-02,Manjunath Gowda,Sub-Inspector (SI),KSP-WHF-1002,Varthur Road & Kadugodi
+O-WHF-03,Deepa Krishnamurthy,Sub-Inspector (SI),KSP-WHF-1003,Brookefield & Hoodi
+O-WHF-04,Ravi Shankar B.,Assistant Sub-Inspector (ASI),KSP-WHF-1004,Hope Farm & EPIP Zone
+O-WHF-05,Suma Patil,Assistant Sub-Inspector (ASI),KSP-WHF-1005,Whitefield Old Town
+O-WHF-06,Harish Naik,Head Constable (HC),KSP-WHF-1006,ITPL Back Gate Area
+O-WHF-07,Girija Devi,Head Constable (HC),KSP-WHF-1007,Kundalahalli & Mahadevapura
+O-WHF-08,Prakash Mudaliar,Constable (PC),KSP-WHF-1008,Whitefield Market
+O-WHF-09,Usha Bhat,Constable (PC),KSP-WHF-1009,Hoodi Junction
+O-WHF-10,Siddappa K.,Constable (PC),KSP-WHF-1010,Varthur Main Road Mobile Patrol

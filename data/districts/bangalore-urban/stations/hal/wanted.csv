@@ -1,0 +1,5 @@
+person_id,name,charge_description,date_wanted_since,last_seen_location,status,reward_amount
+P-HAL-009,Avinash Reddy,Kidnapping for ransom — victim later released unharmed; two associates arrested,2025-01-20T00:00:00+05:30,HAL Airport Road Overpass,active,"₹75,000 (synthetic)"
+P-HAL-010,Savitha Nair,Motor vehicle theft ring — suspected coordinator; 7 vehicles linked,2025-03-05T00:00:00+05:30,Indiranagar 100 Feet Road,active,"₹30,000 (synthetic)"
+P-HAL-011,Mohammed Irfan,Absconding after bail — original charge armed robbery with grievous hurt,2025-05-12T00:00:00+05:30,Domlur Ring Road,active,"₹40,000 (synthetic)"
+P-HAL-012,Bharathi Govindswamy,Domestic violence — repeat offender; restraining order violated twice,2025-07-01T00:00:00+05:30,HAL 2nd Stage Market,apprehended,"₹10,000 (synthetic)"

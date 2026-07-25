@@ -1,1 +1,11 @@
-
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-INR-001,INR-FIR-2025-001,physical,Car KA-01-UL-3345 recovered from abandoned plot near 5th Cross — ignition bypassed,O-INR-02
+E-INR-002,INR-FIR-2025-002,physical,Crowbar and torch found at scene — prints lifted; undergoing FSL analysis,O-INR-03
+E-INR-003,INR-FIR-2025-003,digital,Fraudulent domain registration records and email headers — certified by cybercrime cell,O-INR-01
+E-INR-004,INR-FIR-2025-004,testimonial,Three witness statements (bystanders) — signed depositions; IDs W-INR-004A/B/C,O-INR-04
+E-INR-005,INR-FIR-2025-005,physical,CCTV-identified bag stolen from café — recovered from second-hand shop CMH Road,O-INR-05
+E-INR-006,INR-FIR-2025-006,photographic-description-only,CCTV description: suspect on two-wheeler — INR-CAM-06 sighting at 08:15 (image not included in record),O-INR-06
+E-INR-007,INR-FIR-2025-007,physical,Wallet with victim's ID (emptied) and rope found discarded at scene,O-INR-08
+E-INR-008,INR-FIR-2025-008,physical,Vehicle KA-04-SJ-5587 number plate found at distance — not attached to any registered frame at scene,O-INR-02
+E-INR-009,INR-FIR-2025-012,testimonial,Victim's statement and medical report — documented injuries consistent with assault; hospital record attached,O-INR-04
+E-INR-010,INR-FIR-2025-013,physical,Vehicle paint fragment and broken headlight cluster from MVA scene — matched to KA-01-SH-4432,O-INR-09

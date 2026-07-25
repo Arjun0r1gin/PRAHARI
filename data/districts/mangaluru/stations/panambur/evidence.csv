@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-PNB-001,PNB-FIR-2025-001,physical,Stolen KA-70-DF-8856 motorcycle found dismantled near MRPL fence,O-PNB-02
+E-PNB-002,PNB-FIR-2025-002,testimonial,Two witness statements from night workers — signed depositions,O-PNB-01
+E-PNB-003,PNB-FIR-2025-003,physical,Stolen goods recovered from pawn shop — victim ID confirmed,O-PNB-03
+E-PNB-004,PNB-FIR-2025-005,photographic-description-only,CCTV description PNB-CAM-01 showing entry at 03:55 (image not in record),O-PNB-04

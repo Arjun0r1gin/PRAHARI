@@ -1,10 +1,16 @@
 {
   "levels": {
-    "CRITICAL": { "minScore": 85, "maxScore": 100, "color": "#FF2B4A", "actionSLAHours": 1 },
-    "HIGH": { "minScore": 70, "maxScore": 84, "color": "#FF6B00", "actionSLAHours": 4 },
-    "MEDIUM": { "minScore": 45, "maxScore": 69, "color": "#FFC700", "actionSLAHours": 24 },
-    "LOW": { "minScore": 0, "maxScore": 44, "color": "#00E5FF", "actionSLAHours": 72 }
+    "CRITICAL": { "minScore": 75, "maxScore": 100, "color": "#FF2B4A", "actionSLAHours": 1 },
+    "HIGH": { "minScore": 50, "maxScore": 74, "color": "#FF6B00", "actionSLAHours": 4 },
+    "MEDIUM": { "minScore": 25, "maxScore": 49, "color": "#FFC700", "actionSLAHours": 24 },
+    "LOW": { "minScore": 0, "maxScore": 24, "color": "#00E5FF", "actionSLAHours": 72 }
   },
+  "scoreBands": [
+    { "name": "CRITICAL", "min": 75, "max": 100 },
+    { "name": "HIGH", "min": 50, "max": 74 },
+    { "name": "MEDIUM", "min": 25, "max": 49 },
+    { "name": "LOW", "min": 0, "max": 24 }
+  ],
   "weights": {
     "recidivism": 0.35,
     "crimeSeverity": 0.30,

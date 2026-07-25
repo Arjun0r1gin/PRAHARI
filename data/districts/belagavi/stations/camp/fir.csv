@@ -1,0 +1,6 @@
+incident_id,type,timestamp,location_lat,location_lng,status,linked_person_ids
+CAMP-FIR-2025-001,vehicle_theft,2025-02-10T21:15:00+05:30,15.8512,74.4963,open,P-CAMP-001
+CAMP-FIR-2025-002,cybercrime,2025-05-18T15:40:00+05:30,15.8538,74.4991,open,P-CAMP-003
+CAMP-FIR-2025-003,burglary,2025-08-03T03:10:00+05:30,15.8489,74.4937,under_investigation,P-CAMP-002;P-CAMP-004
+CAMP-FIR-2025-004,theft,2025-10-25T09:55:00+05:30,15.8561,74.5018,closed,P-CAMP-005
+CAMP-FIR-2025-005,assault,2025-12-14T20:20:00+05:30,15.8525,74.4977,under_investigation,P-CAMP-001

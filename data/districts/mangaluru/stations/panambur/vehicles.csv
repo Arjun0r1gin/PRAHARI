@@ -1,0 +1,6 @@
+plate_number,vehicle_type,color,flagged_reason,linked_person_id
+KA-70-DF-8856,motorcycle,black,stolen,P-PNB-001
+KA-19-EG-1190,car,blue,none,
+KA-21-FH-4423,motorcycle,white,wanted,P-PNB-004
+KA-62-GJ-7757,car,grey,none,
+KA-70-HK-3391,auto_rickshaw,yellow,none,

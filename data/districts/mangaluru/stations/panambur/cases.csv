@@ -1,0 +1,4 @@
+case_id,linked_incident_ids,status,assigned_officer_id
+C-PNB-2025-01,PNB-FIR-2025-001,under_investigation,O-PNB-02
+C-PNB-2025-02,PNB-FIR-2025-002;PNB-FIR-2025-003,closed,O-PNB-01
+C-PNB-2025-03,PNB-FIR-2025-004;PNB-FIR-2025-005,open,O-PNB-01

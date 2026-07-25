@@ -1,0 +1,4 @@
+case_id,linked_incident_ids,status,assigned_officer_id
+C-KRJ-2025-01,KRJ-FIR-2025-001;KRJ-FIR-2025-005,under_investigation,O-KRJ-02
+C-KRJ-2025-02,KRJ-FIR-2025-002,open,O-KRJ-01
+C-KRJ-2025-03,KRJ-FIR-2025-003;KRJ-FIR-2025-004,closed,O-KRJ-03

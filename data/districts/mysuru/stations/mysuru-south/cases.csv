@@ -1,0 +1,4 @@
+case_id,linked_incident_ids,status,assigned_officer_id
+C-MYS-2025-01,MYS-FIR-2025-001,under_investigation,O-MYS-02
+C-MYS-2025-02,MYS-FIR-2025-002;MYS-FIR-2025-003,under_investigation,O-MYS-02
+C-MYS-2025-03,MYS-FIR-2025-004;MYS-FIR-2025-005,open,O-MYS-01

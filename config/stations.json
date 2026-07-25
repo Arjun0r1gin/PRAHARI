@@ -1,8 +1,28 @@
 {
   "stations": [
-    { "code": "WFD-01", "name": "Whitefield", "district": "KA-BLR-U", "adapter": "whitefield-adapter.js" },
-    { "code": "HAL-02", "name": "HAL Police Station", "district": "KA-BLR-U", "adapter": "hal-adapter.js" },
-    { "code": "BLR-03", "name": "Bellandur Police Station", "district": "KA-BLR-U", "adapter": "bellandur-adapter.js" },
-    { "code": "IND-04", "name": "Indiranagar Police Station", "district": "KA-BLR-U", "adapter": "indiranagar-adapter.js" }
+    { "id": "whitefield", "code": "WFD-01", "name": "Whitefield Police Station", "district": "bangalore-urban", "districtCode": "KA-BLR-U", "adapter": "whitefield-adapter.js" },
+    { "id": "hal", "code": "HAL-02", "name": "HAL Police Station", "district": "bangalore-urban", "districtCode": "KA-BLR-U", "adapter": "hal-adapter.js" },
+    { "id": "bellandur", "code": "BLR-03", "name": "Bellandur Police Station", "district": "bangalore-urban", "districtCode": "KA-BLR-U", "adapter": "bellandur-adapter.js" },
+    { "id": "indiranagar", "code": "IND-04", "name": "Indiranagar Police Station", "district": "bangalore-urban", "districtCode": "KA-BLR-U", "adapter": "indiranagar-adapter.js" },
+
+    { "id": "devaraja", "code": "DVR-01", "name": "Devaraja Police Station", "district": "mysuru", "districtCode": "KA-MYS", "adapter": "mysuru-adapter.js" },
+    { "id": "krishnaraja", "code": "KRJ-02", "name": "Krishnaraja Police Station", "district": "mysuru", "districtCode": "KA-MYS", "adapter": "mysuru-adapter.js" },
+    { "id": "narasimharaja", "code": "NRJ-03", "name": "Narasimharaja Police Station", "district": "mysuru", "districtCode": "KA-MYS", "adapter": "mysuru-adapter.js" },
+    { "id": "mysuru-south", "code": "MYS-04", "name": "Mysuru South Police Station", "district": "mysuru", "districtCode": "KA-MYS", "adapter": "mysuru-adapter.js" },
+
+    { "id": "mangalore-north", "code": "MNGN-01", "name": "Mangalore North Police Station", "district": "mangaluru", "districtCode": "KA-MNG", "adapter": "mangaluru-adapter.js" },
+    { "id": "mangalore-south", "code": "MNGS-02", "name": "Mangalore South Police Station", "district": "mangaluru", "districtCode": "KA-MNG", "adapter": "mangaluru-adapter.js" },
+    { "id": "mangalore-east", "code": "MNGE-03", "name": "Mangalore East Police Station", "district": "mangaluru", "districtCode": "KA-MNG", "adapter": "mangaluru-adapter.js" },
+    { "id": "panambur", "code": "PNB-04", "name": "Panambur Police Station", "district": "mangaluru", "districtCode": "KA-MNG", "adapter": "mangaluru-adapter.js" },
+
+    { "id": "belagavi-rural", "code": "BLVR-01", "name": "Belagavi Rural Police Station", "district": "belagavi", "districtCode": "KA-BLG", "adapter": "belagavi-adapter.js" },
+    { "id": "camp", "code": "CAMP-02", "name": "Camp Belagavi Police Station", "district": "belagavi", "districtCode": "KA-BLG", "adapter": "belagavi-adapter.js" },
+    { "id": "apmc", "code": "APMC-03", "name": "APMC Belagavi Police Station", "district": "belagavi", "districtCode": "KA-BLG", "adapter": "belagavi-adapter.js" },
+    { "id": "kakati", "code": "KKT-04", "name": "Kakati Police Station", "district": "belagavi", "districtCode": "KA-BLG", "adapter": "belagavi-adapter.js" },
+
+    { "id": "ashok-nagar", "code": "ASK-01", "name": "Ashok Nagar Kalaburagi Station", "district": "kalaburagi", "districtCode": "KA-KLB", "adapter": "kalaburagi-adapter.js" },
+    { "id": "brahmapur", "code": "BRP-02", "name": "Brahmapur Police Station", "district": "kalaburagi", "districtCode": "KA-KLB", "adapter": "kalaburagi-adapter.js" },
+    { "id": "station-bazar", "code": "STB-03", "name": "Station Bazar Police Station", "district": "kalaburagi", "districtCode": "KA-KLB", "adapter": "kalaburagi-adapter.js" },
+    { "id": "roza", "code": "ROZA-04", "name": "Roza Police Station", "district": "kalaburagi", "districtCode": "KA-KLB", "adapter": "kalaburagi-adapter.js" }
   ]
 }

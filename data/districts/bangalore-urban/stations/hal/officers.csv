@@ -1,1 +1,12 @@
-
+officer_id,name,rank,badge_number,assigned_beat
+O-HAL-01,Suresh Murthy,Inspector (PI),KSP-HAL-2001,HAL Old Airport Road
+O-HAL-02,Anitha Krishnaswamy,Sub-Inspector (SI),KSP-HAL-2002,HAL 2nd & 3rd Stage
+O-HAL-03,Madhukar Rao,Sub-Inspector (SI),KSP-HAL-2003,Domlur Extension & Layout
+O-HAL-04,Padmavathi S.,Assistant Sub-Inspector (ASI),KSP-HAL-2004,Indiranagar 12th Main liaison
+O-HAL-05,Jagadeesh Naik,Assistant Sub-Inspector (ASI),KSP-HAL-2005,HAL Police Colony
+O-HAL-06,Latha Devraj,Head Constable (HC),KSP-HAL-2006,Old Madras Road
+O-HAL-07,Chandrashekar B.,Head Constable (HC),KSP-HAL-2007,HAL Market & bus stand
+O-HAL-08,Roopa Devi,Constable (PC),KSP-HAL-2008,Domlur Mobile Patrol
+O-HAL-09,Venkatesh Swamy,Constable (PC),KSP-HAL-2009,HAL Gate & perimeter
+O-HAL-10,Sheela Bhat,Constable (PC),KSP-HAL-2010,HAL Layout residential beat
+O-HAL-11,Nagaraj M.,Constable (PC),KSP-HAL-2011,HAL 3rd Stage Night Patrol

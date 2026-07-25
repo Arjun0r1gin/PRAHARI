@@ -1,0 +1,6 @@
+plate_number,vehicle_type,color,flagged_reason,linked_person_id
+KA-09-WX-1178,motorcycle,red,stolen,P-NRJ-004
+KA-09-YZ-4412,car,white,none,
+KA-09-AC-7745,motorcycle,orange,wanted,P-NRJ-005
+KA-09-BD-2289,car,silver,none,
+KA-09-CE-5523,auto_rickshaw,yellow,none,

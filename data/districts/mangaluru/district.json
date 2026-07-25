@@ -1,1 +1,15 @@
-
+{
+  "district_id": "mangaluru",
+  "name": "Dakshina Kannada",
+  "headquarters": "Mangaluru",
+  "state": "Karnataka",
+  "vehicle_registration_series": ["KA-19", "KA-21", "KA-62", "KA-70"],
+  "stations": [
+    { "station_id": "mangalore-north", "name": "Mangalore North", "date_format": "DD-MM-YYYY", "person_field": "Suspect Name" },
+    { "station_id": "mangalore-south", "name": "Mangalore South", "date_format": "ISO8601",    "person_field": "Offender Name" },
+    { "station_id": "mangalore-east",  "name": "Mangalore East",  "date_format": "unix_epoch", "person_field": "Accused" },
+    { "station_id": "panambur",        "name": "Panambur",        "date_format": "MM/DD/YYYY", "person_field": "Person of Interest" }
+  ],
+  "jurisdiction_center": { "lat": 12.9141, "lng": 74.8560 },
+  "_note": "All person and crime data in station sub-folders is entirely fictional. See data/DISCLAIMER.md."
+}

@@ -1,1 +1,15 @@
-
+{
+  "district_id": "bangalore-urban",
+  "name": "Bangalore Urban",
+  "headquarters": "Bengaluru",
+  "state": "Karnataka",
+  "vehicle_registration_series": ["KA-01", "KA-02", "KA-03", "KA-04", "KA-05"],
+  "stations": [
+    { "station_id": "whitefield", "name": "Whitefield", "date_format": "DD-MM-YYYY", "person_field": "Suspect Name" },
+    { "station_id": "hal",         "name": "HAL",         "date_format": "ISO8601",    "person_field": "Offender Name" },
+    { "station_id": "bellandur",   "name": "Bellandur",   "date_format": "unix_epoch", "person_field": "Accused" },
+    { "station_id": "indiranagar", "name": "Indiranagar", "date_format": "MM/DD/YYYY", "person_field": "Person of Interest" }
+  ],
+  "jurisdiction_center": { "lat": 12.9716, "lng": 77.5946 },
+  "_note": "All person and crime data in station sub-folders is entirely fictional. See data/DISCLAIMER.md."
+}

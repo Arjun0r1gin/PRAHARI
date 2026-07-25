@@ -1,1 +1,11 @@
-
+officer_id,name,rank,badge_number,assigned_beat
+O-BLR-01,Venkataraman N.,Inspector (PI),KSP-BLR-3001,Bellandur ORR & Junction
+O-BLR-02,Shilpa Kamath,Sub-Inspector (SI),KSP-BLR-3002,Sarjapur Road & Eco Space
+O-BLR-03,Manjunath Patil,Sub-Inspector (SI),KSP-BLR-3003,Bellandur Village & Lake Road
+O-BLR-04,Pushpa Devi,Assistant Sub-Inspector (ASI),KSP-BLR-3004,ORR Service Road
+O-BLR-05,Ganesh Shetty,Assistant Sub-Inspector (ASI),KSP-BLR-3005,Bellandur Main Road
+O-BLR-06,Radhakrishna,Head Constable (HC),KSP-BLR-3006,Outer Ring Road patrol
+O-BLR-07,Kamakshi Rao,Head Constable (HC),KSP-BLR-3007,Bellandur Market Area
+O-BLR-08,Thimme Gowda,Constable (PC),KSP-BLR-3008,Eco Space Night Patrol
+O-BLR-09,Savitri Naik,Constable (PC),KSP-BLR-3009,Lake bund road patrol
+O-BLR-10,Raju T.,Constable (PC),KSP-BLR-3010,ORR Mobile Patrol

@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-KRJ-001,KRJ-FIR-2025-001,physical,Motorcycle KA-09-LM-3345 recovered from suspect's house — engine number tampered,O-KRJ-02
+E-KRJ-002,KRJ-FIR-2025-002,digital,Phishing email evidence — headers and attachment extracted from victim device,O-KRJ-01
+E-KRJ-003,KRJ-FIR-2025-003,physical,Screwdriver set and torch found at burglary scene — fingerprints lifted,O-KRJ-03
+E-KRJ-004,KRJ-FIR-2025-004,testimonial,Shop owner deposition — signed; witness ID W-KRJ-004,O-KRJ-04

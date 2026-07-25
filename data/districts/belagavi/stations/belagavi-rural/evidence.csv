@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-BLVR-001,BLV-R-FIR-2025-001,physical,Stolen scooter KA-22-AB-3312 found in farm outbuilding,O-BLVR-02
+E-BLVR-002,BLV-R-FIR-2025-002,physical,Jemmy bar recovered from burglary entry — fingerprints,O-BLVR-03
+E-BLVR-003,BLV-R-FIR-2025-003,testimonial,Shopkeeper deposition — signed; W-BLVR-003,O-BLVR-04
+E-BLVR-004,BLV-R-FIR-2025-005,physical,Cash ₹7,800 seized from suspect — denomination matches victim claim,O-BLVR-02

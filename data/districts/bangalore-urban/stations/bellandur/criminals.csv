@@ -1,1 +1,9 @@
-
+person_id,Accused,prior_offense_summary,prior_offense_count,last_known_zone,photo
+P-BLR-001,Gopal Nayak,Theft from unlocked vehicles (2022); petty theft (2023),2,Bellandur Junction,avatar_placeholder.svg
+P-BLR-002,Shanthi Reddy,Motor vehicle theft — two-wheeler specialist (2023); possessing stolen vehicle parts (2024),2,Outer Ring Road Bellandur,avatar_placeholder.svg
+P-BLR-003,Raju Shetty,Assault with dangerous weapon (2021); criminal intimidation (2022); affray (2024),3,Bellandur Lake Road,avatar_placeholder.svg
+P-BLR-004,Farooq Ahmed,Armed robbery — petrol station incident (2024),1,Sarjapur Road junction,avatar_placeholder.svg
+P-BLR-005,Nalini Bhat,Organized burglary — residential (2022); receiving stolen goods (2023); burglary commercial (2025),3,Bellandur Village,avatar_placeholder.svg
+P-BLR-006,Dinesh Hebbar,Assault on public servant (2023); affray (2024),2,ORR Service Road,avatar_placeholder.svg
+P-BLR-007,Suma Gowda,Snatching (2023); chain snatching from vehicle (2024),2,Eco Space Area,avatar_placeholder.svg
+P-BLR-008,Krishna Murthy R.,Commercial burglary — IT park supply store (2025),1,Bellandur Main Road,avatar_placeholder.svg

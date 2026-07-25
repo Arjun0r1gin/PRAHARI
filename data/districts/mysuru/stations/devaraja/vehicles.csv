@@ -1,0 +1,6 @@
+plate_number,vehicle_type,color,flagged_reason,linked_person_id
+KA-09-AB-1123,motorcycle,black,stolen,P-DVR-001
+KA-09-CD-4456,car,white,none,
+KA-09-EF-7789,auto_rickshaw,yellow,none,
+KA-09-GH-2234,motorcycle,red,wanted,P-DVR-004
+KA-09-JK-5567,car,silver,none,

@@ -1,0 +1,6 @@
+plate_number,vehicle_type,color,flagged_reason,linked_person_id
+KA-09-LM-3345,motorcycle,blue,stolen,P-KRJ-001
+KA-09-NP-6678,car,grey,none,
+KA-09-QR-9901,motorcycle,green,wanted,P-KRJ-004
+KA-09-ST-2213,car,black,none,
+KA-09-UV-5546,auto_rickshaw,yellow,none,

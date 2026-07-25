@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-STB-001,STB-FIR-2025-002,physical,Stolen motorcycle KA-33-WX-1178 recovered from canal road — keys stolen,O-STB-02
+E-STB-002,STB-FIR-2025-003,physical,Jemmy bar and adhesive tape at burglary entry — fingerprints sent FSL,O-STB-03
+E-STB-003,STB-FIR-2025-001,testimonial,Stall keeper statement — theft from bazar stall; signed; W-STB-001,O-STB-04
+E-STB-004,STB-FIR-2025-005,digital,Malware extracted from victim system by CCID cyber team,O-STB-01

@@ -1,1 +1,9 @@
-
+person_id,Offender Name,prior_offense_summary,prior_offense_count,last_known_zone,photo
+P-HAL-001,Sundar Krishnamurthy,Burglary (2021); receiving stolen property (2023),2,HAL Old Airport Road,avatar_placeholder.svg
+P-HAL-002,Vikram Poojary,Assault (2022); grievous hurt (2024),2,HAL 2nd Stage,avatar_placeholder.svg
+P-HAL-003,Rekha Subramaniam,Shoplifting (2020); theft from dwelling (2022); petty theft (2023),3,Domlur Extension,avatar_placeholder.svg
+P-HAL-004,Santhosh Babu,Motor vehicle theft (2022); handling stolen vehicle parts (2024),2,Indiranagar 12th Main,avatar_placeholder.svg
+P-HAL-005,Chandrakala Hegde,Robbery (2024),1,HAL Police Colony Area,avatar_placeholder.svg
+P-HAL-006,Tariq Hussain Shaikh,Online fraud — impersonation (2023); UPI scam (2024),2,Domlur Layout,avatar_placeholder.svg
+P-HAL-007,Meenakshi Iyer,Chain snatching (2023); snatching from vehicle (2024),2,HAL 3rd Stage,avatar_placeholder.svg
+P-HAL-008,Prasanna Kumar N.,Burglary — commercial premises (2024),1,Old Madras Road Area,avatar_placeholder.svg

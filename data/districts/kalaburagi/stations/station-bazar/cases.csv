@@ -1,0 +1,4 @@
+case_id,linked_incident_ids,status,assigned_officer_id
+C-STB-2025-01,STB-FIR-2025-002;STB-FIR-2025-001,under_investigation,O-STB-02
+C-STB-2025-02,STB-FIR-2025-003;STB-FIR-2025-004,closed,O-STB-03
+C-STB-2025-03,STB-FIR-2025-005,open,O-STB-01

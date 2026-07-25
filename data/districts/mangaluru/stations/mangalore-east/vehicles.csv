@@ -1,0 +1,6 @@
+plate_number,vehicle_type,color,flagged_reason,linked_person_id
+KA-62-WX-1178,motorcycle,red,stolen,P-MNGE-001
+KA-70-YZ-4412,car,white,none,
+KA-19-AC-7745,motorcycle,orange,wanted,P-MNGE-004
+KA-21-BD-2289,car,silver,none,
+KA-62-CE-5523,auto_rickshaw,yellow,none,

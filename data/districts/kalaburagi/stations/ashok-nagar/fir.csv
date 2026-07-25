@@ -1,0 +1,6 @@
+incident_id,type,date,time,location_lat,location_lng,status,linked_person_ids
+ASK-FIR-2025-001,vehicle_theft,10-01-2025,22:30,17.3312,76.8218,open,P-ASK-001
+ASK-FIR-2025-002,burglary,15-04-2025,03:10,17.3338,76.8245,under_investigation,P-ASK-002;P-ASK-003
+ASK-FIR-2025-003,theft,08-07-2025,11:15,17.3289,76.8192,closed,P-ASK-004
+ASK-FIR-2025-004,assault,22-09-2025,20:40,17.3361,76.8271,under_investigation,P-ASK-001
+ASK-FIR-2025-005,robbery,05-12-2025,23:20,17.3325,76.8229,open,P-ASK-005

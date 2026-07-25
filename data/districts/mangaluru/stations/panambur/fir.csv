@@ -1,0 +1,6 @@
+incident_id,type,date,time,location_lat,location_lng,status,linked_person_ids
+PNB-FIR-2025-001,vehicle_theft,02/17/2025,23:10,12.9421,74.8247,open,P-PNB-001
+PNB-FIR-2025-002,robbery,05/14/2025,22:00,12.9447,74.8274,under_investigation,P-PNB-002;P-PNB-003
+PNB-FIR-2025-003,theft,08/30/2025,09:45,12.9398,74.8221,closed,P-PNB-004
+PNB-FIR-2025-004,assault,10/11/2025,19:55,12.9470,74.8301,under_investigation,P-PNB-001
+PNB-FIR-2025-005,burglary,12/20/2025,04:00,12.9434,74.8261,open,P-PNB-005

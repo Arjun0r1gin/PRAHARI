@@ -1,1 +1,15 @@
-
+{
+  "district_id": "kalaburagi",
+  "name": "Kalaburagi",
+  "headquarters": "Kalaburagi",
+  "state": "Karnataka",
+  "vehicle_registration_series": ["KA-32"],
+  "stations": [
+    { "station_id": "ashok-nagar",   "name": "Ashok Nagar",   "date_format": "DD-MM-YYYY", "person_field": "Suspect Name" },
+    { "station_id": "brahmapur",     "name": "Brahmapur",     "date_format": "ISO8601",    "person_field": "Offender Name" },
+    { "station_id": "station-bazar", "name": "Station Bazar", "date_format": "unix_epoch", "person_field": "Accused" },
+    { "station_id": "roza",          "name": "Roza",          "date_format": "MM/DD/YYYY", "person_field": "Person of Interest" }
+  ],
+  "jurisdiction_center": { "lat": 17.3297, "lng": 76.8200 },
+  "_note": "All person and crime data in station sub-folders is entirely fictional. See data/DISCLAIMER.md."
+}

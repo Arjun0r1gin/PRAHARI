@@ -1,0 +1,6 @@
+plate_number,vehicle_type,color,flagged_reason,linked_person_id
+KA-32-DF-8856,motorcycle,black,stolen,P-ROZA-001
+KA-76-EG-1190,car,blue,none,
+KA-33-FH-4423,motorcycle,white,wanted,P-ROZA-004
+KA-32-GJ-7757,car,grey,none,
+KA-76-HK-3391,auto_rickshaw,yellow,none,

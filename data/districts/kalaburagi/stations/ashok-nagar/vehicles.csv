@@ -1,0 +1,6 @@
+plate_number,vehicle_type,color,flagged_reason,linked_person_id
+KA-32-AB-1134,motorcycle,black,stolen,P-ASK-001
+KA-33-CD-4467,car,white,none,
+KA-76-EF-7790,auto_rickshaw,yellow,none,
+KA-32-GH-2245,motorcycle,red,wanted,P-ASK-004
+KA-33-JK-5578,car,silver,none,

@@ -1,0 +1,6 @@
+incident_id,type,timestamp,location_lat,location_lng,status,linked_person_ids
+KRJ-FIR-2025-001,vehicle_theft,2025-02-08T22:10:00+05:30,12.2972,76.6386,open,P-KRJ-001
+KRJ-FIR-2025-002,cybercrime,2025-04-15T14:30:00+05:30,12.2948,76.6361,open,P-KRJ-003
+KRJ-FIR-2025-003,burglary,2025-07-03T02:50:00+05:30,12.2995,76.6412,under_investigation,P-KRJ-002;P-KRJ-004
+KRJ-FIR-2025-004,theft,2025-10-19T11:20:00+05:30,12.2961,76.6374,closed,P-KRJ-005
+KRJ-FIR-2025-005,robbery,2025-12-11T21:40:00+05:30,12.2984,76.6398,under_investigation,P-KRJ-001

@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-CAMP-001,CAMP-FIR-2025-001,physical,Stolen vehicle KA-23-LM-1123 found with tampered registration,O-CAMP-02
+E-CAMP-002,CAMP-FIR-2025-002,digital,Fraudulent UPI request screenshot — victim's phone extracted,O-CAMP-01
+E-CAMP-003,CAMP-FIR-2025-003,physical,Bolt cutter and torch at commercial burglary scene,O-CAMP-03
+E-CAMP-004,CAMP-FIR-2025-005,testimonial,Three witness statements from camp area assault,O-CAMP-04

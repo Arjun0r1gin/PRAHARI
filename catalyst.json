@@ -2,9 +2,15 @@
   "functions": {
     "source": "functions",
     "targets": [
+      "data-fusion",
       "risk-engine",
       "hotspot-engine",
-      "network-analysis"
+      "network-analysis",
+      "auth-hooks",
+      "audit-log",
+      "outcome-loop",
+      "event-triggers",
+      "report-export"
     ],
     "ignore": []
   }

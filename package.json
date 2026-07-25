@@ -4,12 +4,15 @@
   "private": true,
   "description": "PRAHARI - AI-assisted Crime Intelligence & Analytics Platform for Karnataka State Police",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "pack:shared": "node scripts/pack-shared.js",
+    "pack:shared:only": "node scripts/pack-shared.js --pack-only"
   },
   "devDependencies": {
     "jest": "^29.7.0"
   },
   "dependencies": {
+    "uuid": "^8.3.2",
     "zcatalyst-sdk-node": "^3.4.0"
   }
 }

@@ -1,0 +1,4 @@
+case_id,linked_incident_ids,status,assigned_officer_id
+C-BRP-2025-01,BRP-FIR-2025-001;BRP-FIR-2025-002,under_investigation,O-BRP-02
+C-BRP-2025-02,BRP-FIR-2025-003;BRP-FIR-2025-004,closed,O-BRP-03
+C-BRP-2025-03,BRP-FIR-2025-005,open,O-BRP-01

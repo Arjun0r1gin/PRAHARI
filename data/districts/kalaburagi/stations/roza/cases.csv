@@ -1,0 +1,4 @@
+case_id,linked_incident_ids,status,assigned_officer_id
+C-ROZA-2025-01,ROZA-FIR-2025-001;ROZA-FIR-2025-005,under_investigation,O-ROZA-02
+C-ROZA-2025-02,ROZA-FIR-2025-002;ROZA-FIR-2025-003,closed,O-ROZA-03
+C-ROZA-2025-03,ROZA-FIR-2025-004,open,O-ROZA-01

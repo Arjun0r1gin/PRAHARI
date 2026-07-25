@@ -1,0 +1,6 @@
+incident_id,type,timestamp,location_lat,location_lng,status,linked_person_ids
+STB-FIR-2025-001,theft,1737211200,17.3341,76.8251,closed,P-STB-002
+STB-FIR-2025-002,vehicle_theft,1743321600,17.3367,76.8278,open,P-STB-001
+STB-FIR-2025-003,burglary,1748000000,17.3318,76.8224,under_investigation,P-STB-003;P-STB-004
+STB-FIR-2025-004,assault,1753200000,17.3390,76.8305,under_investigation,P-STB-005
+STB-FIR-2025-005,cybercrime,1757750000,17.3354,76.8263,open,P-STB-002

@@ -1,0 +1,6 @@
+plate_number,vehicle_type,color,flagged_reason,linked_person_id
+KA-24-WX-1178,motorcycle,red,stolen,P-APMC-001
+KA-49-YZ-4412,car,white,none,
+KA-22-AC-7745,motorcycle,orange,wanted,P-APMC-004
+KA-23-BD-2289,car,silver,none,
+KA-49-CE-5523,auto_rickshaw,yellow,none,

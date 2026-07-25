@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-ROZA-001,ROZA-FIR-2025-001,physical,Stolen motorcycle KA-32-DF-8856 found abandoned near ward boundary,O-ROZA-02
+E-ROZA-002,ROZA-FIR-2025-002,testimonial,Shop owner deposition — robbery; signed; W-ROZA-002,O-ROZA-03
+E-ROZA-003,ROZA-FIR-2025-003,physical,Jemmy and screwdriver found at burglary scene — FSL queued,O-ROZA-04
+E-ROZA-004,ROZA-FIR-2025-005,physical,Cash ₹10,200 seized from suspect; denomination match confirmed,O-ROZA-02

@@ -1,0 +1,18 @@
+{
+  "name": "@prahari/shared",
+  "version": "1.0.0",
+  "description": "Shared middleware, repositories, and utilities for PRAHARI Catalyst functions",
+  "main": "index.js",
+  "private": false,
+  "author": "arjunvijayakumar1122@gmail.com",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "middleware/",
+    "repositories/",
+    "utils/",
+    "constants/",
+    "schemas/",
+    "types/"
+  ]
+}

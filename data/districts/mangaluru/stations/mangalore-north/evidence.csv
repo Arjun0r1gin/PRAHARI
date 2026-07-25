@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-MNGN-001,MNG-N-FIR-2025-001,physical,Stolen motorcycle KA-19-AB-2234 recovered from scrapper — tampered chassis,O-MNGN-02
+E-MNGN-002,MNG-N-FIR-2025-002,physical,Crowbar and cotton gloves at burglary scene — FSL processing,O-MNGN-03
+E-MNGN-003,MNG-N-FIR-2025-003,testimonial,Shopkeeper deposition regarding theft — signed; W-MNGN-003,O-MNGN-04
+E-MNGN-004,MNG-N-FIR-2025-005,digital,Phishing site domain records — certified by cyber cell,O-MNGN-01

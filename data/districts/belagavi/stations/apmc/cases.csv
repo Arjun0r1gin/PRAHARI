@@ -1,0 +1,4 @@
+case_id,linked_incident_ids,status,assigned_officer_id
+C-APMC-2025-01,APMC-FIR-2025-002;APMC-FIR-2025-001,under_investigation,O-APMC-01
+C-APMC-2025-02,APMC-FIR-2025-003;APMC-FIR-2025-004,closed,O-APMC-03
+C-APMC-2025-03,APMC-FIR-2025-005,open,O-APMC-02

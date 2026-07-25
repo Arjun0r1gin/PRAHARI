@@ -1,0 +1,6 @@
+incident_id,type,timestamp,location_lat,location_lng,status,linked_person_ids
+MNG-E-FIR-2025-001,theft,1738000800,12.8994,74.8687,closed,P-MNGE-002
+MNG-E-FIR-2025-002,vehicle_theft,1742688000,12.9017,74.8714,open,P-MNGE-001
+MNG-E-FIR-2025-003,assault,1747094400,12.8972,74.8661,under_investigation,P-MNGE-003;P-MNGE-004
+MNG-E-FIR-2025-004,burglary,1751299200,12.9040,74.8740,under_investigation,P-MNGE-005
+MNG-E-FIR-2025-005,cybercrime,1755504000,12.9003,74.8699,open,P-MNGE-002

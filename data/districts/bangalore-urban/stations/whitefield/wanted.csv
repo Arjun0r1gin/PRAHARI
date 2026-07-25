@@ -1,0 +1,5 @@
+person_id,name,charge_description,date_wanted_since,last_seen_location,status,reward_amount
+P-WHF-009,Venkat Narasimhan,Motor vehicle theft and resale of stolen parts — 4 vehicles identified,15-01-2025,Whitefield Market Area,active,"₹25,000 (synthetic)"
+P-WHF-010,Lakshmi Bai Kulkarni,Organized burglary — residential B-block sector; 3 confirmed hits,07-03-2025,Hope Farm Signal,active,"₹15,000 (synthetic)"
+P-WHF-011,Santosh Verma,Armed robbery with firearm — petrol station incident Varthur Road,28-04-2025,ITPL Main Gate,active,"₹50,000 (synthetic)"
+P-WHF-012,Ramakrishna Hebbar,Cybercrime — UPI fraud scheme targeting IT employees; estimated ₹8L defrauded,10-06-2025,Brookefield Tech Park,apprehended,"₹20,000 (synthetic)"

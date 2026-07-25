@@ -1,1 +1,9 @@
-
+person_id,Suspect Name,prior_offense_summary,prior_offense_count,last_known_zone,photo
+P-WHF-001,Rajesh Shetty,Assault and battery (2022); public disorder (2023),2,Whitefield Main Road,avatar_placeholder.svg
+P-WHF-002,Kamala Devi Nayak,Shoplifting (2021); petty theft (2022); pickpocketing (2024),3,ITPL Back Gate Area,avatar_placeholder.svg
+P-WHF-003,Subramaniam Pillai,Motor vehicle theft (2023); possession of stolen goods (2024),2,Varthur Road,avatar_placeholder.svg
+P-WHF-004,Geetha Reddy,Chain snatching (2024),1,Whitefield Old Town,avatar_placeholder.svg
+P-WHF-005,Mohammed Rafiq Shaikh,Burglary (2020); trespass (2022); attempt to rob (2023),3,Hope Farm Junction,avatar_placeholder.svg
+P-WHF-006,Anand Swamy,Assault (2023); criminal intimidation (2024),2,Kadugodi,avatar_placeholder.svg
+P-WHF-007,Prabhavathi G.,Receiving stolen property (2022); burglary (2025),2,Brookefield,avatar_placeholder.svg
+P-WHF-008,Dinesh Kumar Rao,Armed robbery (2023),1,EPIP Zone Whitefield,avatar_placeholder.svg

@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-MNGE-001,MNG-E-FIR-2025-001,testimonial,Eyewitness statement — security guard sighting; W-MNGE-001,O-MNGE-02
+E-MNGE-002,MNG-E-FIR-2025-002,physical,Stolen scooter KA-62-WX-1178 recovered in shed near bypass,O-MNGE-01
+E-MNGE-003,MNG-E-FIR-2025-003,physical,Iron rod (80cm) seized from suspect — bloodstain — FSL queued,O-MNGE-03
+E-MNGE-004,MNG-E-FIR-2025-005,digital,Malware sample extracted from victim's device by cyber cell,O-MNGE-01

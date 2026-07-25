@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-MYS-001,MYS-FIR-2025-001,physical,Stolen motorcycle KA-09-DF-8856 found in shop near south bypass,O-MYS-02
+E-MYS-002,MYS-FIR-2025-002,testimonial,Eyewitness statement by shopkeeper; signed deposition; W-MYS-002,O-MYS-03
+E-MYS-003,MYS-FIR-2025-003,physical,Jemmy and bolt cutter seized at entry point of burglary — gloves with prints,O-MYS-02
+E-MYS-004,MYS-FIR-2025-004,photographic-description-only,CCTV description MYS-CAM-03 shows two subjects at 20:15 (image not in record),O-MYS-04

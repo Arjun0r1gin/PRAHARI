@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-APMC-001,APMC-FIR-2025-001,testimonial,Market vendor deposition regarding theft; W-APMC-001,O-APMC-02
+E-APMC-002,APMC-FIR-2025-002,physical,Stolen motorcycle KA-24-WX-1178 found near outer wall,O-APMC-01
+E-APMC-003,APMC-FIR-2025-003,physical,Lock cutting tools and sack recovered from burglary scene,O-APMC-03
+E-APMC-004,APMC-FIR-2025-005,physical,Cash ₹11,000 and mobile phone seized from suspect after robbery,O-APMC-02

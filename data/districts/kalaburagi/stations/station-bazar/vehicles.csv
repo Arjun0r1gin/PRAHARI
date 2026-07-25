@@ -1,0 +1,6 @@
+plate_number,vehicle_type,color,flagged_reason,linked_person_id
+KA-33-WX-1178,motorcycle,red,stolen,P-STB-001
+KA-76-YZ-4412,car,white,none,
+KA-32-AC-7745,motorcycle,orange,wanted,P-STB-004
+KA-33-BD-2289,car,silver,none,
+KA-76-CE-5523,auto_rickshaw,yellow,none,

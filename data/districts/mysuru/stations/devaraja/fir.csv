@@ -1,0 +1,6 @@
+incident_id,type,date,time,location_lat,location_lng,status,linked_person_ids
+DVR-FIR-2025-001,theft,12-01-2025,10:30,12.2941,76.6381,closed,P-DVR-002
+DVR-FIR-2025-002,vehicle_theft,24-03-2025,23:15,12.2968,76.6403,open,P-DVR-001
+DVR-FIR-2025-003,assault,05-06-2025,19:45,12.2920,76.6358,under_investigation,P-DVR-003;P-DVR-004
+DVR-FIR-2025-004,burglary,18-09-2025,03:20,12.2985,76.6421,under_investigation,P-DVR-005
+DVR-FIR-2025-005,chain_snatching,30-11-2025,08:05,12.2952,76.6394,open,P-DVR-006

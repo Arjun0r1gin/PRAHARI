@@ -1,0 +1,6 @@
+plate_number,vehicle_type,color,flagged_reason,linked_person_id
+KA-22-AB-3312,motorcycle,black,stolen,P-BLVR-001
+KA-23-CD-6645,car,white,none,
+KA-49-EF-9978,auto_rickshaw,yellow,none,
+KA-22-GH-2234,motorcycle,red,wanted,P-BLVR-004
+KA-24-JK-5567,car,silver,none,

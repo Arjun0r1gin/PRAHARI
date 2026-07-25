@@ -1,1 +1,15 @@
-
+{
+  "district_id": "mysuru",
+  "name": "Mysuru",
+  "headquarters": "Mysuru",
+  "state": "Karnataka",
+  "vehicle_registration_series": ["KA-09"],
+  "stations": [
+    { "station_id": "devaraja",      "name": "Devaraja",      "date_format": "DD-MM-YYYY", "person_field": "Suspect Name" },
+    { "station_id": "krishnaraja",   "name": "Krishnaraja",   "date_format": "ISO8601",    "person_field": "Offender Name" },
+    { "station_id": "narasimharaja", "name": "Narasimharaja", "date_format": "unix_epoch", "person_field": "Accused" },
+    { "station_id": "mysuru-south",  "name": "Mysuru South",  "date_format": "MM/DD/YYYY", "person_field": "Person of Interest" }
+  ],
+  "jurisdiction_center": { "lat": 12.2958, "lng": 76.6394 },
+  "_note": "All person and crime data in station sub-folders is entirely fictional. See data/DISCLAIMER.md."
+}

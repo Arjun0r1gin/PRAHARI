@@ -1,1 +1,14 @@
-
+plate_number,vehicle_type,color,flagged_reason,linked_person_id
+KA-01-RH-2213,car,white,stolen,P-INR-004
+KA-04-SJ-5587,motorcycle,black,wanted,P-INR-010
+KA-05-TK-9934,auto_rickshaw,yellow,none,
+KA-01-UL-3345,car,silver,stolen,P-INR-004
+KA-04-VM-7721,motorcycle,red,wanted,P-INR-013
+KA-01-SH-4432,car,grey,wanted,P-INR-013
+KA-05-WN-6678,motorcycle,blue,none,
+KA-01-XP-8890,car,black,stolen,P-INR-007
+KA-04-YQ-1156,goods_vehicle,white,none,
+KA-05-ZR-4423,motorcycle,green,none,
+KA-01-AS-7789,car,maroon,none,
+KA-04-BT-3312,motorcycle,orange,stolen,P-INR-002
+KA-05-CU-6645,car,white,none,

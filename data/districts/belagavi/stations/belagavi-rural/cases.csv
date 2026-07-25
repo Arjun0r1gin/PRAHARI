@@ -1,0 +1,4 @@
+case_id,linked_incident_ids,status,assigned_officer_id
+C-BLVR-2025-01,BLV-R-FIR-2025-001;BLV-R-FIR-2025-002,under_investigation,O-BLVR-02
+C-BLVR-2025-02,BLV-R-FIR-2025-003,closed,O-BLVR-04
+C-BLVR-2025-03,BLV-R-FIR-2025-004;BLV-R-FIR-2025-005,open,O-BLVR-01

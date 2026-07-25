@@ -1,0 +1,6 @@
+incident_id,type,date,time,location_lat,location_lng,status,linked_person_ids
+ROZA-FIR-2025-001,vehicle_theft,01/19/2025,22:00,17.3271,76.8235,open,P-ROZA-001
+ROZA-FIR-2025-002,theft,04/07/2025,10:45,17.3298,76.8262,closed,P-ROZA-003
+ROZA-FIR-2025-003,burglary,07/15/2025,03:30,17.3248,76.8209,under_investigation,P-ROZA-002;P-ROZA-004
+ROZA-FIR-2025-004,assault,09/22/2025,19:20,17.3321,76.8288,under_investigation,P-ROZA-005
+ROZA-FIR-2025-005,robbery,12/08/2025,21:55,17.3284,76.8248,open,P-ROZA-001

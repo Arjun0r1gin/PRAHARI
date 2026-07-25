@@ -1,0 +1,6 @@
+incident_id,type,timestamp,location_lat,location_lng,status,linked_person_ids
+NRJ-FIR-2025-001,theft,1737209400,12.2931,76.6369,closed,P-NRJ-002
+NRJ-FIR-2025-002,assault,1742479800,12.2956,76.6391,under_investigation,P-NRJ-001;P-NRJ-003
+NRJ-FIR-2025-003,vehicle_theft,1746073800,12.2978,76.6412,open,P-NRJ-004
+NRJ-FIR-2025-004,burglary,1749974400,12.2943,76.6378,under_investigation,P-NRJ-005
+NRJ-FIR-2025-005,cybercrime,1753566000,12.2966,76.6401,open,P-NRJ-003

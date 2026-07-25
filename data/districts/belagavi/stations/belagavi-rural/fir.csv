@@ -1,0 +1,6 @@
+incident_id,type,date,time,location_lat,location_lng,status,linked_person_ids
+BLV-R-FIR-2025-001,vehicle_theft,15-01-2025,22:10,15.8321,74.5123,open,P-BLVR-001
+BLV-R-FIR-2025-002,burglary,27-04-2025,02:50,15.8347,74.5151,under_investigation,P-BLVR-002;P-BLVR-003
+BLV-R-FIR-2025-003,theft,09-07-2025,10:30,15.8298,74.5097,closed,P-BLVR-004
+BLV-R-FIR-2025-004,assault,21-09-2025,20:00,15.8370,74.5178,under_investigation,P-BLVR-001
+BLV-R-FIR-2025-005,robbery,03-12-2025,23:45,15.8334,74.5136,open,P-BLVR-005

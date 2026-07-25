@@ -1,0 +1,6 @@
+incident_id,type,timestamp,location_lat,location_lng,status,linked_person_ids
+MNG-S-FIR-2025-001,vehicle_theft,2025-01-15T21:50:00+05:30,12.8641,74.8430,open,P-MNGS-001
+MNG-S-FIR-2025-002,robbery,2025-04-22T23:05:00+05:30,12.8667,74.8458,under_investigation,P-MNGS-002
+MNG-S-FIR-2025-003,chain_snatching,2025-07-09T08:30:00+05:30,12.8618,74.8406,open,P-MNGS-003
+MNG-S-FIR-2025-004,burglary,2025-09-28T02:45:00+05:30,12.8690,74.8481,under_investigation,P-MNGS-001;P-MNGS-004
+MNG-S-FIR-2025-005,theft,2025-11-17T10:20:00+05:30,12.8652,74.8444,closed,P-MNGS-005

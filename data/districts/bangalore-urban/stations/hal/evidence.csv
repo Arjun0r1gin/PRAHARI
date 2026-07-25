@@ -1,1 +1,11 @@
-
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-HAL-001,HAL-FIR-2025-001,physical,Spare key and wiring harness found near suspect P-HAL-004 — consistent with vehicle bypass method,O-HAL-02
+E-HAL-002,HAL-FIR-2025-002,physical,Glass cutter tool and nylon sack recovered from scene at HAL 2nd Stage,O-HAL-03
+E-HAL-003,HAL-FIR-2025-003,digital,Fraudulent website URL and session logs — extracted from victim's device via forensic software,O-HAL-01
+E-HAL-004,HAL-FIR-2025-004,testimonial,Two independent witness statements — victim and passerby — notarised; witness IDs W-HAL-004A and W-HAL-004B,O-HAL-04
+E-HAL-005,HAL-FIR-2025-005,physical,Recovered stolen laptop from pawnshop — serial number matches victim's FIR,O-HAL-06
+E-HAL-006,HAL-FIR-2025-006,photographic-description-only,CCTV description: female subject on two-wheeler matching description at signal HAL-CAM-03 at 08:38 (image not included in record),O-HAL-07
+E-HAL-007,HAL-FIR-2025-007,physical,Knife (20cm blade) seized from suspect during arrest — sent for FSL analysis,O-HAL-01
+E-HAL-008,HAL-FIR-2025-008,physical,Registration plate detached from flagged vehicle KA-02-AB-5512 found in storm drain,O-HAL-02
+E-HAL-009,HAL-FIR-2025-009,testimonial,Missing person poster distributed; two sighting reports received — logged as supporting evidence,O-HAL-09
+E-HAL-010,HAL-FIR-2025-010,digital,ATM usage log — card misuse at 3 locations post-burglary; sourced from bank forensic cell,O-HAL-01

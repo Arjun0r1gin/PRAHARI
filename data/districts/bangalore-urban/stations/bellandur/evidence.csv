@@ -1,1 +1,11 @@
-
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-BLR-001,BLR-FIR-2025-001,physical,Stolen motorcycle KA-03-AC-1134 recovered from shed near Bellandur lake; ignition tampered,O-BLR-02
+E-BLR-002,BLR-FIR-2025-002,physical,Stolen laptop and mobile phone in sack; recovered from ground-floor duct at crime scene,O-BLR-03
+E-BLR-003,BLR-FIR-2025-003,testimonial,Shopkeeper's deposition — petty theft — signed and witnessed; witness ID W-BLR-003,O-BLR-07
+E-BLR-004,BLR-FIR-2025-004,digital,Keylogger malware sample extracted from victim's system — sent to cyber forensic lab,O-BLR-01
+E-BLR-005,BLR-FIR-2025-005,physical,Iron rod (90cm) seized from suspects at scene — blood trace; sent for DNA,O-BLR-04
+E-BLR-006,BLR-FIR-2025-006,photographic-description-only,CCTV description: female suspect on scooter matching chain-snatching MO sighted on BLR-CAM-02 at 08:44 (image not in record),O-BLR-06
+E-BLR-007,BLR-FIR-2025-007,physical,Cash of ₹9,200 seized from accused; denomination matches victim's claim,O-BLR-08
+E-BLR-008,BLR-FIR-2025-008,physical,Vehicle key and ignition adapter for car — linked to KA-04-BD-8876 (flagged),O-BLR-02
+E-BLR-009,BLR-FIR-2025-009,digital,Mobile tower location data showing suspect P-BLR-005 in Bellandur at time of burglary,O-BLR-01
+E-BLR-010,BLR-FIR-2025-012,physical,Damaged vehicle bumper and paint sample from scene — paint matches suspect vehicle,O-BLR-09

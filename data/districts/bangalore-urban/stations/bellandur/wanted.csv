@@ -1,0 +1,5 @@
+person_id,name,charge_description,date_wanted_since,last_seen_location,status,reward_amount
+P-BLR-009,Nagaraju V.,Cybercrime — ATM card skimming device installation network; 3 ATMs compromised,1737244800,Bellandur ORR ATM cluster,active,"₹35,000 (synthetic)"
+P-BLR-010,Kalpana Shenoy,Repeat vehicle theft — 3 two-wheelers and 1 car; suspected coordinator of resale network,1741161600,Sarjapur Road Area,active,"₹20,000 (synthetic)"
+P-BLR-011,Ramesh Patil,Bail absconder — original charge: domestic violence with grievous hurt,1744617600,Bellandur Lake Bund Road,apprehended,"₹10,000 (synthetic)"
+P-BLR-012,Ajith Kumar S.,Dangerous driving causing accident; leaving the scene of accident; 1 victim hospitalised,1748073600,ORR Bellandur Flyover area,active,"₹15,000 (synthetic)"

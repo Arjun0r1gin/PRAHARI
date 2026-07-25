@@ -1,0 +1,6 @@
+plate_number,vehicle_type,color,flagged_reason,linked_person_id
+KA-09-DF-8856,motorcycle,black,stolen,P-MYS-001
+KA-09-EG-1190,car,blue,none,
+KA-09-FH-4423,motorcycle,white,wanted,P-MYS-004
+KA-09-GJ-7757,car,grey,none,
+KA-09-HK-3391,auto_rickshaw,yellow,none,

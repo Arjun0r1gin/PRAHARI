@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-ASK-001,ASK-FIR-2025-001,physical,Stolen motorcycle KA-32-AB-1134 recovered from scrap yard with altered chassis,O-ASK-02
+E-ASK-002,ASK-FIR-2025-002,physical,Lock-picking tools found at burglary entry point — FSL queued,O-ASK-03
+E-ASK-003,ASK-FIR-2025-003,testimonial,Shopkeeper statement — theft reported; signed deposition; W-ASK-003,O-ASK-04
+E-ASK-004,ASK-FIR-2025-005,physical,Cash ₹8,300 and mobile phone seized from robbery suspect,O-ASK-02

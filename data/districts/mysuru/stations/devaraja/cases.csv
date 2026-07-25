@@ -1,0 +1,4 @@
+case_id,linked_incident_ids,status,assigned_officer_id
+C-DVR-2025-01,DVR-FIR-2025-002,under_investigation,O-DVR-02
+C-DVR-2025-02,DVR-FIR-2025-001,closed,O-DVR-03
+C-DVR-2025-03,DVR-FIR-2025-003;DVR-FIR-2025-004,under_investigation,O-DVR-01

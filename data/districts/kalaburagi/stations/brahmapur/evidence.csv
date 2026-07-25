@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-BRP-001,BRP-FIR-2025-001,physical,Motorcycle KA-76-LM-1123 recovered with tampered engine number,O-BRP-02
+E-BRP-002,BRP-FIR-2025-002,digital,Fraudulent UPI app screenshot — certified by cyber cell,O-BRP-01
+E-BRP-003,BRP-FIR-2025-003,physical,Crowbar and torch recovered from burglary scene,O-BRP-03
+E-BRP-004,BRP-FIR-2025-005,testimonial,Two bystander statements — assault scene; signed; W-BRP-005A/B,O-BRP-04

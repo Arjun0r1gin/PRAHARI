@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-MNGS-001,MNG-S-FIR-2025-001,physical,Stolen motorcycle KA-21-LM-1123 found near harbour quay — parts dismantled,O-MNGS-02
+E-MNGS-002,MNG-S-FIR-2025-002,physical,Knife seized from suspect at scene — sent FSL,O-MNGS-01
+E-MNGS-003,MNG-S-FIR-2025-003,photographic-description-only,CCTV description MNGS-CAM-02 showing suspect on scooter at 08:22 (image not in record),O-MNGS-03
+E-MNGS-004,MNG-S-FIR-2025-004,physical,Crowbar and bolt cutter recovered from burglary entry point,O-MNGS-02

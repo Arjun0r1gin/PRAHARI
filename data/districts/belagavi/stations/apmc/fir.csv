@@ -1,0 +1,6 @@
+incident_id,type,timestamp,location_lat,location_lng,status,linked_person_ids
+APMC-FIR-2025-001,theft,1737900000,15.8621,74.4821,closed,P-APMC-002
+APMC-FIR-2025-002,vehicle_theft,1743264000,15.8648,74.4849,open,P-APMC-001
+APMC-FIR-2025-003,burglary,1748628000,15.8598,74.4796,under_investigation,P-APMC-003;P-APMC-004
+APMC-FIR-2025-004,assault,1752825600,15.8672,74.4876,under_investigation,P-APMC-005
+APMC-FIR-2025-005,robbery,1757592000,15.8634,74.4834,open,P-APMC-001

@@ -1,1 +1,13 @@
-
+plate_number,vehicle_type,color,flagged_reason,linked_person_id
+KA-01-MG-4521,motorcycle,black,stolen,P-WHF-003
+KA-02-HK-7890,car,silver,wanted,P-WHF-009
+KA-03-PN-3214,auto_rickshaw,yellow,none,
+KA-04-AB-6543,car,white,stolen,P-WHF-008
+KA-05-CD-8876,motorcycle,red,wanted,P-WHF-011
+KA-01-EF-1122,car,blue,none,
+KA-02-GH-9988,motorcycle,black,stolen,P-WHF-003
+KA-03-JK-4567,goods_vehicle,white,none,
+KA-04-LM-2233,car,grey,wanted,P-WHF-009
+KA-05-NP-5544,motorcycle,green,none,
+KA-01-QR-6677,car,red,stolen,P-WHF-012
+KA-02-ST-3388,motorcycle,blue,none,

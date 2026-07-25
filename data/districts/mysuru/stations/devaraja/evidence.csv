@@ -1,0 +1,5 @@
+evidence_id,linked_incident_id,type,description,chain_of_custody_officer_id
+E-DVR-001,DVR-FIR-2025-001,physical,Stolen motorcycle KA-09-AB-1123 found at scrap dealer — frame number matched,O-DVR-02
+E-DVR-002,DVR-FIR-2025-002,testimonial,Market vendor eyewitness statement — signed deposition,O-DVR-03
+E-DVR-003,DVR-FIR-2025-003,physical,Blunt weapon (iron pipe) recovered near assault scene — FSL queued,O-DVR-01
+E-DVR-004,DVR-FIR-2025-004,photographic-description-only,CCTV description: subject entering premise at 03:14 on DVR-CAM-02 (image not in record),O-DVR-04
