@@ -2,17 +2,26 @@ const fs = require("fs");
 const path = require("path");
 const { getCatalystApp } = require("@prahari/shared/utils/catalystHelper");
 
+/** Module-level cache variable for static model-version configuration */
+let cachedModelVersion = null;
+
 /**
  * Helper to safely resolve and read model_version from models/prediction/model-version.json
+ * NOTE: Caching static model-version JSON at module scope is correct because the version config is static build data.
  * @returns {string} Model version identifier string
  */
 function getModelVersion() {
+  if (cachedModelVersion !== null) {
+    return cachedModelVersion;
+  }
   try {
     const versionPath = path.resolve(__dirname, "../../models/prediction/model-version.json");
     const rawData = fs.readFileSync(versionPath, "utf8");
     const parsed = JSON.parse(rawData);
-    return parsed.model_version || "v0.1-mock";
+    cachedModelVersion = parsed.model_version || "v0.1-mock";
+    return cachedModelVersion;
   } catch (err) {
+    console.error('[automlClient] Warning: Could not read model version config:', err.message);
     return "v0.1-mock";
   }
 }

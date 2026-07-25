@@ -2,6 +2,34 @@ const fs = require("fs");
 const path = require("path");
 const { getCentrality } = require("../rules/networkCentralityFlag");
 
+/** Module-level cache variable for static socio-economic factors configuration */
+let cachedSocioEconomicFactors = null;
+
+/**
+ * Loads static socio-economic correlation factors from disk (cached at module level).
+ *
+ * ARCHITECTURAL DISTINCTION:
+ * Module-level caching is CORRECT here because socio-economic-factors.json contains static build configuration
+ * that does not change per HTTP request. This is the OPPOSITE situation from Prompt 1's bug, where caching
+ * Catalyst SDK instances at module scope was WRONG because Catalyst contexts are request-scoped (req.catalyst).
+ *
+ * TRADEOFF NOTE: If socio-economic-factors.json is edited on disk while a function instance stays warm in memory,
+ * the cached factors will persist until the next cold start. This is the intended trade-off for performance
+ * in short-lived Catalyst functions.
+ *
+ * @returns {Record<string, number>} Parsed socio-economic factors map
+ */
+function loadSocioEconomicFactors() {
+  if (cachedSocioEconomicFactors !== null) {
+    return cachedSocioEconomicFactors;
+  }
+
+  const configPath = path.resolve(__dirname, "../../../models/prediction/socio-economic-factors.json");
+  const rawData = fs.readFileSync(configPath, "utf8");
+  cachedSocioEconomicFactors = JSON.parse(rawData);
+  return cachedSocioEconomicFactors;
+}
+
 /**
  * Reads socio-economic correlation factor for a station/district.
  * @param {string} stationId
@@ -9,14 +37,13 @@ const { getCentrality } = require("../rules/networkCentralityFlag");
  */
 function getSocioEconomicFactor(stationId) {
   try {
-    const configPath = path.resolve(__dirname, "../../../models/prediction/socio-economic-factors.json");
-    const rawData = fs.readFileSync(configPath, "utf8");
-    const factors = JSON.parse(rawData);
+    const factors = loadSocioEconomicFactors();
     if (stationId && typeof factors[stationId] === "number") {
       return factors[stationId];
     }
     return typeof factors.default === "number" ? factors.default : 0.5;
   } catch (err) {
+    console.error('[featureEngineering] Warning: Could not read socio-economic factor config:', err.message);
     return 0.5;
   }
 }

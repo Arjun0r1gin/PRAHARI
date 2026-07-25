@@ -60,8 +60,6 @@ function generateTraceId() {
  */
 async function getScore(req, res) {
   try {
-    throw new Error("Prompt4 internal error test");
-
     const validation = validateRequest(req, {
       custom: (r) => {
         const alertId = (r && r.params && r.params.alertId) || (r && r.query && r.query.alertId) || (r && r.body && r.body.alertId);
