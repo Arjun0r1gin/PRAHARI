@@ -24,7 +24,15 @@ function loadSocioEconomicFactors() {
     return cachedSocioEconomicFactors;
   }
 
-  const configPath = path.resolve(__dirname, "../../../models/prediction/socio-economic-factors.json");
+  const candidatePaths = [
+    path.resolve(__dirname, "../../../models/prediction/socio-economic-factors.json"),
+    path.resolve(__dirname, "../../../../models/prediction/socio-economic-factors.json"),
+    path.resolve(process.cwd(), "models/prediction/socio-economic-factors.json"),
+    path.resolve(process.cwd(), ".build/models/prediction/socio-economic-factors.json")
+  ];
+
+  const configPath = candidatePaths.find((p) => fs.existsSync(p)) || candidatePaths[0];
+
   const rawData = fs.readFileSync(configPath, "utf8");
   cachedSocioEconomicFactors = JSON.parse(rawData);
   return cachedSocioEconomicFactors;
