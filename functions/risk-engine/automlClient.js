@@ -15,7 +15,14 @@ function getModelVersion() {
     return cachedModelVersion;
   }
   try {
-    const versionPath = path.resolve(__dirname, "../../models/prediction/model-version.json");
+    const candidatePaths = [
+      path.resolve(__dirname, "../../models/prediction/model-version.json"),
+      path.resolve(__dirname, "../../../models/prediction/model-version.json"),
+      path.resolve(process.cwd(), "models/prediction/model-version.json"),
+      path.resolve(process.cwd(), ".build/models/prediction/model-version.json")
+    ];
+    const versionPath = candidatePaths.find((p) => fs.existsSync(p)) || candidatePaths[0];
+
     const rawData = fs.readFileSync(versionPath, "utf8");
     const parsed = JSON.parse(rawData);
     cachedModelVersion = parsed.model_version || "v0.1-mock";
