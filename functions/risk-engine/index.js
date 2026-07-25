@@ -23,9 +23,13 @@ app.use(authMiddleware);
 
 // Risk Engine & Decision Engine Routes
 app.get("/v1/risk-engine/score/:alertId", getScore);
+app.get("/score/:alertId", getScore);
 app.get("/v1/risk-engine/score", getScore);
+app.get("/score", getScore);
 app.post("/v1/risk-engine/score", getScore);
+app.post("/score", getScore);
 app.get("/v1/decision-engine/alerts", getAlerts);
+app.get("/decision-engine/alerts", getAlerts);
 
 /**
  * Catalyst Function Main Entry Point Handler
