@@ -55,15 +55,59 @@ function generateTraceId() {
 }
 
 /**
+ * Robust helper to extract alertId across Express req.body, req.params, req.query, and Catalyst req.args
+ * @param {Object} req
+ * @returns {string|null}
+ */
+function extractAlertId(req) {
+  if (!req) return null;
+
+  let body = req.body;
+
+  if (Buffer.isBuffer(body)) {
+    try {
+      body = body.toString("utf8");
+    } catch (err) {
+      body = null;
+    }
+  }
+
+  if (typeof body === "string" && body.trim().startsWith("{")) {
+    try {
+      body = JSON.parse(body);
+    } catch (err) {
+      body = null;
+    }
+  }
+
+  if (!body || typeof body !== "object" || Array.isArray(body)) {
+    body = (req.args && typeof req.args === "object") ? req.args : {};
+  }
+
+  const id =
+    (req.params && (req.params.alertId || req.params.alert_id)) ||
+    (req.query && (req.query.alertId || req.query.alert_id)) ||
+    (body && (body.alertId || body.alert_id));
+
+  return (typeof id === "string" && id.trim() !== "") ? id.trim() : null;
+}
+
+/**
  * GET /v1/risk-engine/score/:alertId
  * Returns calculated risk score, band, factors, explanation, and recommendation.
  */
 async function getScore(req, res) {
+  console.log("[RUNTIME-DEBUG] req.body:", req.body);
+  console.log("[RUNTIME-DEBUG] req.params:", req.params);
+  console.log("[RUNTIME-DEBUG] req.query:", req.query);
+  console.log("[RUNTIME-DEBUG] req.headers:", req.headers);
+  console.log("[RUNTIME-DEBUG] Content-Type:", req.headers && req.headers["content-type"]);
+  console.log("[RUNTIME-DEBUG] req.keys:", Object.keys(req || {}));
   try {
     const validation = validateRequest(req, {
       custom: (r) => {
-        const alertId = (r && r.params && r.params.alertId) || (r && r.query && r.query.alertId) || (r && r.body && r.body.alertId);
-        if (!alertId || typeof alertId !== "string" || alertId.trim() === "") {
+        const alertId = extractAlertId(r);
+        if (!alertId) {
           return "Alert ID parameter is required.";
         }
         return null;
@@ -77,7 +121,7 @@ async function getScore(req, res) {
       return validation.error;
     }
 
-    const alertId = (req && req.params && req.params.alertId) || (req && req.query && req.query.alertId);
+    const alertId = extractAlertId(req);
 
     if (!alertId) {
       if (res && typeof res.status === "function") {
