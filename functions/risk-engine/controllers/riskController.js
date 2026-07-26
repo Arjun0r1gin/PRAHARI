@@ -97,17 +97,17 @@ function extractAlertId(req) {
  * Returns calculated risk score, band, factors, explanation, and recommendation.
  */
 async function getScore(req, res) {
-  console.log("[RUNTIME-DEBUG] req.body:", req.body);
-  console.log("[RUNTIME-DEBUG] req.params:", req.params);
-  console.log("[RUNTIME-DEBUG] req.query:", req.query);
-  console.log("[RUNTIME-DEBUG] req.headers:", req.headers);
-  console.log("[RUNTIME-DEBUG] Content-Type:", req.headers && req.headers["content-type"]);
-  console.log("[RUNTIME-DEBUG] req.keys:", Object.keys(req || {}));
+  console.log(`[TIMESTAMP: ${new Date().toISOString()}] [LOG-1] Enter getScore()`);
+
   try {
+    console.log(`[TIMESTAMP: ${new Date().toISOString()}] [LOG-2] Before extractAlertId()`);
+    const alertId = extractAlertId(req);
+    console.log(`[TIMESTAMP: ${new Date().toISOString()}] [LOG-3] After extractAlertId() -> alertId: ${alertId}`);
+
     const validation = validateRequest(req, {
       custom: (r) => {
-        const alertId = extractAlertId(r);
-        if (!alertId) {
+        const id = extractAlertId(r);
+        if (!id) {
           return "Alert ID parameter is required.";
         }
         return null;
@@ -121,8 +121,6 @@ async function getScore(req, res) {
       return validation.error;
     }
 
-    const alertId = extractAlertId(req);
-
     if (!alertId) {
       if (res && typeof res.status === "function") {
         return sendResponse(res, 404, false, null, {
@@ -134,7 +132,10 @@ async function getScore(req, res) {
       return { status: 404, error_code: "ALERT_NOT_FOUND" };
     }
 
+    console.log(`[TIMESTAMP: ${new Date().toISOString()}] [LOG-4] Before dataRepository.getAlertById()`);
     let alertData = await dataRepository.getAlertById(alertId, req);
+    console.log(`[TIMESTAMP: ${new Date().toISOString()}] [LOG-5] Immediately after getAlertById() returns -> alertData found: ${Boolean(alertData)}`);
+
     if (!alertData || !alertData.record) {
       alertData = findAlertById(alertId);
     }
@@ -152,17 +153,14 @@ async function getScore(req, res) {
 
     const { record, context } = alertData;
 
-    // 1. Calculate risk score using pure domain service
-    const scoreResult = calculateRiskScore(record, context);
+    console.log(`[TIMESTAMP: ${new Date().toISOString()}] [LOG-6] Before calculateRiskScore() & AutoML prediction`);
+    const scoreResult = await calculateRiskScore(record, context);
+    console.log(`[TIMESTAMP: ${new Date().toISOString()}] [LOG-7] Immediately after calculateRiskScore() returns`);
 
-    // 2. Extract fired rule names
     const firedRuleFactors = scoreResult.factors.filter((f) => f.source === "rule");
     const firedRuleNames = firedRuleFactors.map((f) => f.name);
 
-    // 3. Get recommendation using pure domain template lookup
     const recommendation = getRecommendation(firedRuleNames, scoreResult.band, context);
-
-    // 4. Build explanation using pure template builder
     const explanation = buildExplanation(firedRuleNames, context ? context.topFeature : null);
 
     const payload = {
@@ -182,11 +180,13 @@ async function getScore(req, res) {
       }
     };
 
+    console.log(`[TIMESTAMP: ${new Date().toISOString()}] [LOG-8] Before sendResponse()`);
     if (res && typeof res.status === "function") {
       return sendResponse(res, 200, true, payload);
     }
     return payload;
   } catch (err) {
+    console.error(`[TIMESTAMP: ${new Date().toISOString()}] [LOG-9] Before catch block -> Error:`, err);
     return handleControllerError(res, err, {
       errorCode: "RISK_SCORE_CALCULATION_ERROR",
       defaultMessage: "An unexpected error occurred while calculating the risk score.",
@@ -199,12 +199,12 @@ async function getScore(req, res) {
  * GET /v1/decision-engine/alerts?sort=urgency
  * Returns list of alerts sorted by urgency descending.
  */
-function getAlerts(req, res) {
+async function getAlerts(req, res) {
   try {
     const rawAlerts = Object.values(MOCK_ALERT_STORE);
 
-    const processedAlerts = rawAlerts.map((item) => {
-      const scoreResult = calculateRiskScore(item.record, item.context);
+    const processedAlerts = await Promise.all(rawAlerts.map(async (item) => {
+      const scoreResult = await calculateRiskScore(item.record, item.context);
       const firedRuleFactors = scoreResult.factors.filter((f) => f.source === "rule");
 
       let one_line_reason = "Elevated Model Risk Signal";

@@ -30,9 +30,9 @@ function getRiskBand(score) {
  *
  * @param {import('../schema/unified-record').UnifiedRecord} record
  * @param {Object} [context={}]
- * @returns {{ value: number, confidence: number, band: string, factors: Array<{ name: string, points: number, source: string, model_version?: string }> }}
+ * @returns {Promise<{ value: number, confidence: number, band: string, factors: Array<{ name: string, points: number, source: string, model_version?: string }> }>}
  */
-function calculateRiskScore(record, context = {}) {
+async function calculateRiskScore(record, context = {}) {
   if (!record) {
     return {
       value: 0,
@@ -63,8 +63,10 @@ function calculateRiskScore(record, context = {}) {
   }
 
   // 2. Derive features & call AutoML client
+  // NOTE: scoreRecord() can return a Promise (Catalyst AutoML path) or a plain object (deterministic fallback).
+  // Always await to handle both cases safely.
   const features = deriveFeatures(record, context);
-  const { probability: automlProbability, model_version } = scoreRecord(features);
+  const { probability: automlProbability, model_version } = await Promise.resolve(scoreRecord(features));
 
   // 3. Compute model points (max 40)
   const model_points = Math.round(automlProbability * 40);

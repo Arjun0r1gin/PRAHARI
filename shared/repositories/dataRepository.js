@@ -73,7 +73,11 @@ class DataRepository {
       try {
         const datastore = catalystApp.datastore();
         const table = datastore.table(TABLE_ALERTS);
-        const result = await table.getRowPromise(alertId);
+
+        const fetchPromise = table.getRowPromise(alertId);
+        const timeoutPromise = new Promise((resolve) => setTimeout(() => resolve(null), 1500));
+
+        const result = await Promise.race([fetchPromise, timeoutPromise]);
         if (result) return result;
       } catch (err) {
         // Fall back to local mock data on Catalyst query failure
@@ -97,7 +101,11 @@ class DataRepository {
       try {
         const zcql = catalystApp.zcql();
         const query = `SELECT * FROM ${TABLE_INCIDENTS} WHERE district = '${district}'`;
-        const queryResult = await zcql.executeZCQLQuery(query);
+
+        const queryPromise = zcql.executeZCQLQuery(query);
+        const timeoutPromise = new Promise((resolve) => setTimeout(() => resolve(null), 1500));
+
+        const queryResult = await Promise.race([queryPromise, timeoutPromise]);
         if (Array.isArray(queryResult) && queryResult.length > 0) {
           return queryResult.map((row) => row[TABLE_INCIDENTS]);
         }
