@@ -98,6 +98,7 @@ function scoreRecordDeterministic(features, model_version) {
  * @returns {{ probability: number, model_version: string } | Promise<{ probability: number, model_version: string }>}
  */
 function scoreRecord(features = {}, req = null) {
+  console.log(`[TIMESTAMP: ${new Date().toISOString()}] [LOG-6-AUTOML] Before AutoML prediction`);
   const model_version = getModelVersion();
   const catalystApp = getCatalystApp(req);
   const modelId = process.env.AUTOML_MODEL_ID;
@@ -107,19 +108,30 @@ function scoreRecord(features = {}, req = null) {
     try {
       const ai = catalystApp.ai();
       if (ai && typeof ai.predict === "function") {
-        return ai.predict(modelId, features)
-          .then((prediction) => ({
-            probability: parseFloat((prediction.probability || prediction.score || 0.5).toFixed(4)),
-            model_version: prediction.model_version || model_version
-          }))
-          .catch(() => scoreRecordDeterministic(features, model_version));
+        const predictPromise = ai.predict(modelId, features);
+        const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error("AutoML Timeout")), 1500));
+
+        return Promise.race([predictPromise, timeoutPromise])
+          .then((prediction) => {
+            console.log(`[TIMESTAMP: ${new Date().toISOString()}] [LOG-7-AUTOML] Immediately after AutoML prediction returns`);
+            return {
+              probability: parseFloat((prediction.probability || prediction.score || 0.5).toFixed(4)),
+              model_version: prediction.model_version || model_version
+            };
+          })
+          .catch((err) => {
+            console.warn(`[TIMESTAMP: ${new Date().toISOString()}] [LOG-9-AUTOML-CATCH] AutoML prediction error/fallback:`, err.message);
+            return scoreRecordDeterministic(features, model_version);
+          });
       }
     } catch (err) {
-      // Graceful fallback to deterministic implementation
+      console.error(`[TIMESTAMP: ${new Date().toISOString()}] [LOG-9-AUTOML-CATCH] Error in AutoML block:`, err.message);
     }
   }
 
-  return scoreRecordDeterministic(features, model_version);
+  const result = scoreRecordDeterministic(features, model_version);
+  console.log(`[TIMESTAMP: ${new Date().toISOString()}] [LOG-7-AUTOML] Immediately after AutoML prediction returns (deterministic)`);
+  return result;
 }
 
 module.exports = {
